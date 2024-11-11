@@ -1,0 +1,22 @@
+.banner {
+    background-color: black;
+    color: #ffffff;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bannerText {
+    display: inline-block;
+    margin-top: 140px;
+}
+
+.bannerText h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.bannerText p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

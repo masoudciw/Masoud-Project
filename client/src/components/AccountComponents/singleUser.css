@@ -1,0 +1,38 @@
+.userBox {
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.userContainer {
+    margin: 0 auto;
+    width: 550px;
+    background-color: rgb(216, 216, 216);
+    padding: 30px;
+    border: 0px 2px 2px 0px solid gray;
+    border-radius: 15px 15px 15px 15px;
+    height: 550px;
+}
+
+.userContainer h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.userContainer label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.userContainer input {
+    border: 1px solid gray;
+    width: 490px;
+    margin-bottom: 30px;
+}
+
+.userContainer button {
+    width: 490px;
+    margin-bottom: 10px;
+}

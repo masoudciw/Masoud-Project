@@ -1,0 +1,66 @@
+.footer {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.296);
+}
+
+.footer h4 {
+    list-style: none;
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.footer span {
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.679);
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer ul li:hover {
+    color: gray;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer input {
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.footer button {
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.footer button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: transparent;
+    transition: .5s;
+}

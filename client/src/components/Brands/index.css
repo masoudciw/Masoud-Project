@@ -1,0 +1,102 @@
+.brand {
+    background-color: black;
+    color: #ffffff;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.296);
+}
+
+.brandBox {
+    display: inline-block;
+    margin-top: 140px;
+    position: relative;
+    bottom: -1200px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.brandBox h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.brandImages {
+    justify-content: center;
+    margin: 0 auto;
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.brandImages img {
+    width: 260px;
+    margin-right: 150px;
+    position: relative;
+    left: 80px;
+}
+
+.brandImages1 {
+    opacity: 0;
+}
+
+.brandImages2 {
+    opacity: 0;
+}
+
+.brandImages3 {
+    opacity: 0;
+}
+
+.brandImages4 {
+    opacity: 0;
+}
+
+.brandImages5 {
+    opacity: 0;
+}
+
+.brandImages6 {
+    opacity: 0;
+}
+
+.brandImages img:hover {
+    cursor: pointer;
+}
+
+.showContainerForm {
+    bottom: 0;
+    opacity: 1;
+}
+
+.showContainerForm1 {
+    opacity: 1;
+    transition: 5s;
+}
+
+.showContainerForm2 {
+    opacity: 1;
+    transition: 6s;
+}
+
+.showContainerForm3 {
+    opacity: 1;
+    transition: 7s;
+}
+
+.showContainerForm4 {
+    opacity: 1;
+    transition: 8s;
+}
+
+.showContainerForm5 {
+    opacity: 1;
+    transition: 9s;
+}
+
+.showContainerForm6 {
+    opacity: 1;
+    transition: 10s;
+}

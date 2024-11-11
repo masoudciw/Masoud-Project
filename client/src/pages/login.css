@@ -1,0 +1,89 @@
+.loginBox {
+    background-color: black;
+    height: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.formLoginBox {
+    margin: 0 auto;
+    width: 550px;
+    background-color: #ffffffe5;
+    padding: 30px;
+    border: 0px 2px 2px 0px solid gray;
+    border-radius: 15px 15px 15px 15px;
+    height: 800px;
+}
+
+.formLoginBox h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formLoginBox label {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.formLoginBox input {
+    border: 1px solid gray;
+    width: 490px;
+}
+
+.formLoginBox .checkBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formLoginBox .checkBox label {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.formLoginBox .checkBox .checkBoxMarker {
+    position: absolute;
+    left: -225px;
+    top: 29px;
+    height: 15px;
+    border: 1px solid gray;
+}
+
+.formLoginBox .forgotPassword {
+    color: rgba(255, 0, 0, 0.756);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.formLoginBox span {
+    margin-right: 20px;
+}
+
+.formLoginBox button {
+    margin-top: 30px;
+    width: 490px;
+}
+
+.userType{
+    background-color: #ffffff;
+    width: 220px;
+    text-align: left;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.userType input{
+    width: 10px;
+}
+
+.userType span{
+    font-weight: bold;
+}

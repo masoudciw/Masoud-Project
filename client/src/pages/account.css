@@ -1,0 +1,7 @@
+.accountContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.accountContainer .accountSlider{
+    margin-right: 100px;
+}

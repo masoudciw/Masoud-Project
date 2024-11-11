@@ -1,0 +1,47 @@
+const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
+
+const postSchema = new Schema({
+    title: {
+        type: String,
+        required: 'You need to leave a title!',
+        minlength: 1,
+        maxlength: 280,
+        trim: true,
+    },
+    price: {
+        type: Number,
+        required: 'You need to leave a price!',
+        minlength: 1,
+        maxlength: 280,
+        trim: true,
+    },
+    description: {
+        type: String,
+        required: 'You need to leave a description!',
+        minlength: 1,
+        maxlength: 280,
+        trim: true,
+    },
+    image: {
+        type: String,
+        required: 'You need to leave a image!',
+        minlength: 1,
+        maxlength: 280,
+        trim: true,
+    },
+    postAuthor: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
+    }
+});
+
+const Post = model('Post', postSchema);
+
+module.exports = Post;

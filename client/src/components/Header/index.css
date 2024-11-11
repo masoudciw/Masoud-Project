@@ -1,0 +1,55 @@
+header {
+    background-color: black;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header img {
+    width: 70px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 35px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header ul li:last-child {
+    margin-right: 55px;
+}
+
+header ul li:hover {
+    color: gray;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header span {
+    color: rgb(182, 182, 182);
+}
+
+header button {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: black;
+    border: 0px;
+}
+
+header button:hover{
+    color: gray;
+    transition: .3s;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.business {
+    background-color: black;
+    color: #ffffff;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.businessText {
+    display: inline-block;
+    margin-top: 140px;
+    opacity: 0;
+}
+
+.businessText h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.businessText p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.showContainerForm {
+    bottom: 0;
+    opacity: 1;
+    transition: .5s;
+}
+
+.buyButton {
+    margin-right: 500px;
+    opacity: 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.buyButton:hover {
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.showBuyButton {
+    margin-right: 50px;
+    opacity: .8;
+    transition: 1.5s;
+}
+
+.sellButton {
+    margin-left: 500px;
+    opacity: 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.sellButton:hover {
+    background-color: black;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.showSellutton {
+    margin-left: 50px;
+    opacity: .8;
+    transition: 1.5s;
+}

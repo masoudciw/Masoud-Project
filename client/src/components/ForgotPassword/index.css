@@ -1,0 +1,38 @@
+.forgotPasswordBox {
+    background-color: black;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.formForgotPasswordBox {
+    margin: 0 auto;
+    width: 550px;
+    background-color: #ffffffe5;
+    padding: 30px;
+    border: 0px 2px 2px 0px solid gray;
+    border-radius: 15px 15px 15px 15px;
+    height: 400px;
+}
+
+.formForgotPasswordBox h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formForgotPasswordBox label {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.formForgotPasswordBox input {
+    border: 1px solid gray;
+    width: 490px;
+}
+
+.formForgotPasswordBox button {
+    margin-top: 30px;
+}

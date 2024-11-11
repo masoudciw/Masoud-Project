@@ -1,0 +1,111 @@
+.arrowBox{
+    background-color: black;
+    height: 100px;
+}
+.wrapper {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.container {
+    display: inline-block;
+    opacity: 0;
+    position: sticky;
+    bottom: 110px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.showContainer {
+    opacity: 1;
+}
+
+.container svg {
+    width: 42px;
+    float: right;
+    display: block;
+    border: 3px solid #1a73e8;
+    fill: #1a73e8;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.container svg:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    transition: all .5s;
+    border-radius: 12px;
+    fill: #03408F;
+    border: 3px solid #03408F;
+}
+
+@media (min-width: 500px) and (max-width: 1019px) {
+    .container {
+        display: none;
+    }
+}
+
+@media (max-width: 1420px) {
+    .wrapper {
+        width: 1300px;
+    }
+
+}
+
+@media (max-width: 1320px) {
+    .wrapper {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .wrapper {
+        width: 1100px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .wrapper {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1705px) and (max-width:2309px) {
+    .container {
+        position: relative;
+        left: 100px;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 1919px) and (max-width:2309px) {
+    .container {
+        position: relative;
+        left: 200px;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 2047px) and (max-width:2309px) {
+    .container {
+        position: relative;
+        left: 300px;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 2303px) and (max-width:3071px) {
+    .container {
+        position: relative;
+        left: 400px;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 3071px) and (max-width:4607px) {
+    .container {
+        display: none;
+    }
+}

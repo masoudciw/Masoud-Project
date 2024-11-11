@@ -1,0 +1,70 @@
+.signUpBox {
+    background-color: black;
+    height: 950px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.formSignUpBox {
+    margin: 0 auto;
+    width: 550px;
+    background-color: #ffffffe5;
+    padding: 30px;
+    border: 0px 2px 2px 0px solid gray;
+    border-radius: 15px 15px 15px 15px;
+    height: 730px;
+}
+
+.formSignUpBox h6 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formSignUpBox label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formSignUpBox input {
+    border: 1px solid gray;
+    width: 490px;
+    margin-bottom: 25px;
+}
+
+.formSignUpBox span {
+    margin-right: 20px;
+}
+
+.formSignUpBox button {
+    margin-top: 25px;
+    width: 490px;
+}
+
+.formSignUpBox .passwordCondition {
+    margin-top: -23px;
+    font-size: 13px;
+}
+
+.userType {
+    background-color: #ffffff;
+    width: 220px;
+    text-align: left;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.userType input {
+    width: 10px;
+}
+
+.userType span {
+    font-weight: bold;
+}

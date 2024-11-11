@@ -1,0 +1,37 @@
+.slider {
+    width: 350px;
+    background-color: rgb(216, 216, 216);
+    display: inline-block;
+    height: 665px;
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.slider ul {
+    margin-top: 40px;
+    width: 365px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.slider ul li {
+    list-style: none;
+    margin-bottom: 70px;
+}
+
+.slider ul li .linkTag{
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color: #afaeae;
+    font-weight: bold;
+}
+
+.slider ul li .linkTag:hover{
+    background-color: rgb(216, 216, 216);
+    transition: .3s;
+    border: 2px solid rgb(89, 88, 88);
+}
