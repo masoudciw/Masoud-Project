@@ -24,6 +24,10 @@
     margin-top: 10px;
 }
 
+.posts .descriptionBox {
+    width: 250px;
+}
+
 .posts .paragraph {
     border-bottom: 2px solid black;
 }

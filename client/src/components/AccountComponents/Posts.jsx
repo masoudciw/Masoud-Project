@@ -14,7 +14,7 @@ const Posts = () => {
     if (loading) {
         return <h3>Posts Are Loading...</h3>;
     }
-    
+
     return (
         <>
             {data.posts.map((post) => (
@@ -25,10 +25,10 @@ const Posts = () => {
                                 <tr>
                                     <td><span>Title:</span></td>
                                     <td><span>Price:</span></td>
-                                    <td><span>Description:</span></td>
+                                    <td><span className='descriptionBox'>Description:</span></td>
                                     <td><span>Post Author:</span></td>
                                     <td><span>Created At:</span></td>
-                                    <td><span>Image:</span></td>
+                                    {/* <td><span>Image:</span></td> */}
                                     <td><Link to={post._id} className='viewButton'>Delete / Edit</Link></td>
                                 </tr>
                             </thead>
@@ -36,10 +36,10 @@ const Posts = () => {
                                 <tr>
                                     <td><p>{post.title}</p></td>
                                     <td><p>${post.price}</p></td>
-                                    <td><p>{post.description}</p></td>
+                                    <td><p className='descriptionBox'>{post.description}</p></td>
                                     <td><p>{post.postAuthor}</p></td>
                                     <td><p>{post.createdAt}</p></td>
-                                    <td><p>{post.image}</p></td>
+                                    {/* <td><p>{post.image}</p></td> */}
                                 </tr>
                             </tbody>
                         </table>

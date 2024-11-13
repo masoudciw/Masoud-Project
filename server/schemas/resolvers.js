@@ -1,6 +1,17 @@
 const { User, SecretCode, Post } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 const bcrypt = require('bcrypt');
+// const fs = require('fs');
+// const {
+//   GraphQLUpload,
+//   graphqlUploadExpress, // A Koa implementation is also exported.
+// } = require('graphql-upload');
+// const { finished } = require('stream/promises');
+// const {
+//   ApolloServerPluginLandingPageLocalDefault,
+// } = require('apollo-server-core');
+
+// const path = require('path');
 
 const resolvers = {
   Query: {
@@ -92,6 +103,16 @@ const resolvers = {
         postId, { title: title, price: price, description: description, image: image, postAuthor: postAuthor }, { new: true }
       )
     },
+    // uploadFile: async (parent, { file }) => {
+    //   const { createReadStream, filename, mimetype, encoding } = await file;
+
+    //   const stream = createReadStream();
+    //   const pathName = path.join(__dirname, `../client/public/images/${filename}`);
+    //   await stream.pipe(fs.createWriteStream(pathName))
+    //   return {
+    //     url: `http://localhost:3000/images/${filename}`,
+    //   }
+    // }
   },
 };
 

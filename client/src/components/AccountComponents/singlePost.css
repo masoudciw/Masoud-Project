@@ -1,5 +1,5 @@
 .singlePost {
-    height: 600px;
+    height: 800px;
     margin: 0 auto;
     padding-top: 5px;
 }
@@ -11,7 +11,7 @@
     padding: 30px;
     border: 0px 2px 2px 0px solid gray;
     border-radius: 15px 15px 15px 15px;
-    height: 655px;
+    height: 780px;
 }
 
 .singlePostContainer h6 {
@@ -29,6 +29,13 @@
 .singlePostContainer input {
     border: 1px solid gray;
     width: 490px;
+    margin-bottom: 30px;
+}
+
+.singlePostContainer textarea {
+    border: 1px solid gray;
+    width: 490px;
+    height: 150px;
     margin-bottom: 30px;
 }
 

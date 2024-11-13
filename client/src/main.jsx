@@ -23,6 +23,8 @@ import SingleUser from './components/AccountComponents/SingleUser.jsx';
 import SingleSecretCode from './components/AccountComponents/SingleSecretCode.jsx';
 import Posts from './components/AccountComponents/Posts';
 import SinglePost from './components/AccountComponents/SinglePost.jsx';
+import Products from './components/Products/index.jsx';
+import SingleProduct from './components/SingleProduct';
 
 
 const router = createBrowserRouter([
@@ -114,6 +116,14 @@ const router = createBrowserRouter([
             element: <BackendProgrammers />,
           }
         ],
+      },
+      {
+        path: '/products',
+        element: <Products />,
+      },
+      {
+        path: '/products/:postId',
+        element: <SingleProduct />,
       },
     ],
   },

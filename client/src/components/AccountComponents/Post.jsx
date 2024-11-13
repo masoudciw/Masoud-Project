@@ -53,7 +53,7 @@ const Post = () => {
                         <div class="form-group row">
                             <label for="description">Description</label>
                             <div class="col-sm-10">
-                                <input type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="description" placeholder="Description Of Product" />
+                                <textarea type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="description" placeholder="Description Of Product" />
                             </div>
                         </div>
                         <div class="form-group row">
