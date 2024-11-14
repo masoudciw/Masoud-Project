@@ -3,21 +3,22 @@ import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 import useTitle from '../../hooks/useTitle';
+import CommentList from '../CommentComponents/CommentList';
+import CommentForm from '../CommentComponents/CommentForm';
 import './index.css';
 
 const SingleProduct = () => {
 
+    useTitle(`Masoud | Product `);
 
     const { postId } = useParams();
     const { loading, data } = useQuery(QUERY_SINGLE_POST, {
         variables: { postId: postId },
     });
 
-    console.log(data)
     if (loading) {
         return <div>Loading...</div>;
     }
-    useTitle(`Masoud | ${data.post.title} `);
 
     return (
         <>
@@ -32,6 +33,12 @@ const SingleProduct = () => {
                         <button type="submit" class="btn btn-primary">Add To Cart</button>
                     </div>
                 </div>
+            </div>
+            <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+                <CommentForm postId={data.post._id} />
+            </div>
+            <div className="my-5">
+                <CommentList comments={data.post.comments} />
             </div>
         </>
     );

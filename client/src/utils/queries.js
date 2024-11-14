@@ -69,6 +69,12 @@ export const QUERY_SINGLE_POST = gql`
       image
       postAuthor
       createdAt
+      comments {
+        _id
+        commentText
+        commentAuthor
+        createdAt
+      }
     }
   }
 `;

@@ -1,0 +1,32 @@
+.commentBox {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.commentBox h3 {
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.commentBox .commentBoxInfo {
+    position: relative;
+}
+
+.commentBox .commentLink {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    padding: 5px;
+    background-color: red;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.commentBox .commentLink:hover {
+    background-color: transparent;
+    transition: .3s;
+}

@@ -112,3 +112,43 @@ export const UPDATE_POST = gql`
   }
 `;
 
+export const ADD_COMMENT = gql`
+  mutation addComment(
+    $postId: ID!
+    $commentText: String!
+    $commentAuthor: String!
+  ) {
+    addComment(
+      postId: $postId
+      commentText: $commentText
+      commentAuthor: $commentAuthor
+    ) {
+      _id
+      title
+      postAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const DELETE_COMMENT = gql`
+  mutation removeComment($commentId: ID!) {
+    removeComment(commentId: $commentId){
+        _id
+      }
+    }
+`;
+// export const DELETE_COMMENT = gql`
+//   mutation removeComment($commentId: ID!) {
+//     removeComment(commentId: $commentId){
+//         _id
+//         commentText
+//         comments
+//       }
+//     }
+// `;

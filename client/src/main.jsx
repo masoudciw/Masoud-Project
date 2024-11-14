@@ -25,7 +25,7 @@ import Posts from './components/AccountComponents/Posts';
 import SinglePost from './components/AccountComponents/SinglePost.jsx';
 import Products from './components/Products/index.jsx';
 import SingleProduct from './components/SingleProduct';
-
+import SingleComment from './components/CommentComponents/SingleComment';
 
 const router = createBrowserRouter([
   {
@@ -124,6 +124,10 @@ const router = createBrowserRouter([
       {
         path: '/products/:postId',
         element: <SingleProduct />,
+      },
+      {
+        path: '/comment/:commentId',
+        element: <SingleComment />,
       },
     ],
   },

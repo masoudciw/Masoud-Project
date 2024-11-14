@@ -103,6 +103,25 @@ const resolvers = {
         postId, { title: title, price: price, description: description, image: image, postAuthor: postAuthor }, { new: true }
       )
     },
+    addComment: async (parent, { postId, commentText, commentAuthor }) => {
+      return Post.findOneAndUpdate(
+        { _id: postId },
+        {
+          $addToSet: { comments: { commentText, commentAuthor } },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
+    },
+    removeComment: async (parent, { postId, commentId }) => {
+      return Post.findOneAndUpdate(
+        { _id: postId },
+        { $pull: { comments: { _id: commentId } } },
+        { new: true }
+      );
+    },
     // uploadFile: async (parent, { file }) => {
     //   const { createReadStream, filename, mimetype, encoding } = await file;
 

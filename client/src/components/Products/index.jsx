@@ -21,7 +21,7 @@ const Products = () => {
                 {data.posts.map((post) => (
                     <div className="productsBox">
                         <div key={post._id}>
-                            <div className='productsImageBox'>{post.image}</div>
+                        <Link className='productLink' to={post._id}><div className='productsImageBox'>{post.image}</div></Link>
                             <div className='productsInformations'>
                                 <p>Title : <span>{post.title}</span></p>
                                 <p>Price : <span>${post.price}</span></p>

@@ -1,0 +1,14 @@
+.commentFormBox {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.commentFormWriteBox {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.commentFormWriteBox textarea{
+    height: 150px;
+    margin-bottom: 20px;
+}
