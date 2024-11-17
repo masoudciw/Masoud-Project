@@ -136,19 +136,23 @@ export const ADD_COMMENT = gql`
   }
 `;
 
+
+
 export const DELETE_COMMENT = gql`
-  mutation removeComment($commentId: ID!) {
-    removeComment(commentId: $commentId){
-        _id
+  mutation removeComment($postId: ID!, $commentId: ID!) {
+    removeComment(postId: $postId, commentId: $commentId){
+      _id
       }
     }
 `;
+
 // export const DELETE_COMMENT = gql`
-//   mutation removeComment($commentId: ID!) {
-//     removeComment(commentId: $commentId){
+//   mutation removeComment($postId: ID!, $commentId: ID!) {
+//     removeComment(postId: $postId, commentId: $commentId){
+//       _id
+//       comments{
 //         _id
-//         commentText
-//         comments
+//       }
 //       }
 //     }
 // `;

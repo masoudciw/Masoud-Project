@@ -1,8 +1,23 @@
 import Auth from '../../utils/auth';
-import { Link } from 'react-router-dom';
+import { DELETE_COMMENT } from '../../utils/mutations';
+import { useMutation } from '@apollo/client';
+import { useParams } from 'react-router-dom';
 import './commentList.css';
 
 const CommentList = ({ comments = [] }) => {
+  const { postId } = useParams();
+  const [deleteComment, { error }] = useMutation(DELETE_COMMENT);
+
+  const handleDeleteUser = async (postId, arg) => {
+    alert('Comment Deleted Successfully');
+    try {
+      const { data } = await deleteComment({
+        variables: { postId: postId, commentId: arg }
+      })
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   if (!comments.length) {
     return <h3>No Comments Yet</h3>;
@@ -23,7 +38,8 @@ const CommentList = ({ comments = [] }) => {
                 </h5>
                 {console.log()}
                 <p className="card-body">{comment.commentText}</p>
-                {Auth.loggedIn() && Auth.getProfile().data.userType === 'ADMIN' ? <Link className='commentLink' to={`/comment/${comment._id}`} type='submit' onClick={() => handleDeleteUser(commentId)}>Delete Comment</Link> : null}
+                {Auth.loggedIn() && Auth.getProfile().data.username === comment.commentAuthor ? <button className='commentLink' type='submit' onClick={() => handleDeleteUser(postId, comment._id)}>Delete Comment</button> : null}
+                {/* {Auth.loggedIn() && Auth.getProfile().data.userType === 'ADMIN' ? <button className='commentLink' type='submit' onClick={() => handleDeleteUser(postId, comment._id)}>Delete Comment</button> : null} */}
               </div>
             </div>
           ))}
