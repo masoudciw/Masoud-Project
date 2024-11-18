@@ -8,12 +8,12 @@ const initialState = {
     checkout: false
 };
 
-// const sumProducts = (products) => {
-//     const itemsCounter = products.reduce((counter, product) => counter + product.quantity, 0);
-//     const total = products.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2);
+const sumProducts = (products) => {
+    const itemsCounter = products.reduce((counter, product) => counter + product.quantity, 0);
+    const total = products.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2);
 
-//     return { itemsCounter, total }
-// }
+    return { itemsCounter, total }
+}
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -29,7 +29,6 @@ const reducer = (state, action) => {
         default:
             throw new Error('Invalid Action');
     }
-    // console.log(action)
 };
 
 const CartContext = createContext()
