@@ -13,7 +13,9 @@ import {
   split,
 } from '@apollo/client';
 // import { createUploadLink } from 'apollo-upload-client';
+// import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
 import { setContext } from '@apollo/client/link/context';
+import CartProvider from './context/CartContext';
 import './App.css';
 
 const httpLink = createHttpLink({
@@ -57,13 +59,15 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <animated.div style={props}>
-          <Header />
-          <Outlet />
-          <Footer />
-          <Footer2 />
-          <ArrowUp />
-        </animated.div>
+        <CartProvider>
+          <animated.div style={props}>
+            <Header />
+            <Outlet />
+            <Footer />
+            <Footer2 />
+            <ArrowUp />
+          </animated.div>
+        </CartProvider>
       </ApolloProvider>
     </>
   )

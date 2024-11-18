@@ -129,7 +129,7 @@ const resolvers = {
     //   const pathName = path.join(__dirname, `../client/public/images/${filename}`);
     //   await stream.pipe(fs.createWriteStream(pathName))
     //   return {
-    //     url: `http://localhost:3000/images/${filename}`,
+    //     url: `/images/${filename}`,
     //   }
     // }
   },

@@ -15,28 +15,38 @@
     border-radius: 10px;
 }
 
-.productsBox .productsImageBox{
+.productsBox .productsImageBox {
     width: 299.7px;
     height: 250px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.productsBox .productsInformations{
-   padding: 10px;
+.productsBox .productsInformations {
+    padding: 10px;
 }
 
-.productsBox p{
-   color: black;
-   font-weight: bold;
-   font-size: 20px;
+.productsBox p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.productsBox span{
-   font-size: 16px;
-   color: rgb(98, 98, 98);
+.productsBox span {
+    font-size: 16px;
+    color: rgb(98, 98, 98);
 }
 
-.productsBox .productLink{
-  text-decoration: none;
+.productsBox .productLink {
+    text-decoration: none;
+}
+
+.cardButton {
+    border: none;
+    padding: 10px;
+    height: 32px;
+    width: 32px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    float: right;
 }

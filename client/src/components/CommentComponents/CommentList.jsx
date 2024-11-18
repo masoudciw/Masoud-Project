@@ -2,11 +2,17 @@ import Auth from '../../utils/auth';
 import { DELETE_COMMENT } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 import { useParams } from 'react-router-dom';
+import { QUERY_SINGLE_POST } from '../../utils/queries';
 import './commentList.css';
 
 const CommentList = ({ comments = [] }) => {
   const { postId } = useParams();
-  const [deleteComment, { error }] = useMutation(DELETE_COMMENT);
+  const [deleteComment, { data }] = useMutation(DELETE_COMMENT, {
+    refetchQueries: [
+      QUERY_SINGLE_POST,
+      'comments'
+    ]
+  });
 
   const handleDeleteUser = async (postId, arg) => {
     alert('Comment Deleted Successfully');

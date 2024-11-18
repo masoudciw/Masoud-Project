@@ -8,10 +8,10 @@ import CommentForm from '../CommentComponents/CommentForm';
 import './index.css';
 
 const SingleProduct = () => {
-
+    const { postId } = useParams();
     useTitle(`Masoud | Product `);
 
-    const { postId } = useParams();
+
     const { loading, data } = useQuery(QUERY_SINGLE_POST, {
         variables: { postId: postId },
     });

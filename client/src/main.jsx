@@ -25,6 +25,7 @@ import Posts from './components/AccountComponents/Posts';
 import SinglePost from './components/AccountComponents/SinglePost.jsx';
 import Products from './components/Products/index.jsx';
 import SingleProduct from './components/SingleProduct';
+import CheckoutPage from './components/CheckoutPage';
 
 const router = createBrowserRouter([
   {
@@ -123,6 +124,10 @@ const router = createBrowserRouter([
       {
         path: '/products/:postId',
         element: <SingleProduct />,
+      },
+      {
+        path: '/checkout',
+        element: <CheckoutPage />,
       },
     ],
   },
