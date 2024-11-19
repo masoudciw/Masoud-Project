@@ -1,0 +1,91 @@
+.checkoutPageStyle {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.checkoutPage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.basketSideBar {
+    border: 3px dashed red;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.basketSideBar p {
+    font-weight: bold;
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.basketSideBar span {
+    font-weight: bold;
+    color: gray;
+}
+
+.basketSideBar div {
+    margin-bottom: 33px;
+}
+
+.basketSideBar button {
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(2, 215, 2);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.basketSideBar button:hover {
+    background-color: transparent;
+    transition: .3s;
+}
+
+.selectedItems {
+    width: 850px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.selectedItems img {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.selectedItems p {
+    font-weight: bold;
+    display: inline;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.selectedItems .basketCartButtons {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.selectedItems .basketCartButtons button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.selectedItems .basketCartBox {
+    margin-bottom: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(234, 234, 234);
+}

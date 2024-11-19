@@ -13,7 +13,7 @@ const BasketSideBar = ({ state, clickHandler }) => {
             <div>
                 <TbChecklist />
                 <p>Total:</p>
-                <span>{total}</span>
+                <span>${total}</span>
             </div>
             <div>
                 <FaHashtag />
@@ -22,7 +22,7 @@ const BasketSideBar = ({ state, clickHandler }) => {
             </div>
             <div>
                 <BsPatchCheckFill />
-                <p>Total:</p>
+                <p>Status:</p>
                 <span>{!checkout && 'Pending ...'}</span>
             </div>
             <button onClick={() => clickHandler('CHECKOUT')}>Checkout</button>

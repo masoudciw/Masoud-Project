@@ -6,11 +6,11 @@ const BasketCard = ({ data, clickHandler }) => {
 
     return (
         <>
-            <div>
+            <div className='basketCartBox'>
                 <img src={image} alt='Picture Of Product' />
                 <p>{title}</p>
-                <p>{price}</p>
-                <div>
+                <p>${price}</p>
+                <div className='basketCartButtons'>
                     {data.quantity === 1 && (<button onClick={() => clickHandler('REMOVE_ITEM', data)}>{<MdDeleteOutline />}</button>)}
                     {data.quantity > 1 && (<button onClick={() => clickHandler('DECREASE', data)}>-</button>)}
                     <span>{quantity}</span>
