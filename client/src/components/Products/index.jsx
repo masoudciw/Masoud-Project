@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_POSTS } from '../../utils/queries';
 import useTitle from '../../hooks/useTitle';
-import Card from '../Card/Card';
+import Cart from '../Cart/Cart';
 import './index.css';
 
 
@@ -20,7 +20,7 @@ const Products = () => {
             <div className='products'>
                 {data.posts.map((post) => (
                     <div className="productsBox">
-                        <Card key={post._id} datas={post} />
+                        <Cart key={post._id} datas={post} />
                     </div>
                 ))}
             </div >

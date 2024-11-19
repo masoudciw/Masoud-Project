@@ -4,7 +4,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
 header img {
@@ -27,8 +27,20 @@ header ul li {
     color: #ffffff;
 }
 
+header .checkoutIcon {
+    font-size: 35px;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 18px;
+}
+
 header ul li:last-child {
     margin-right: 55px;
+}
+
+header .signUpButton {
+    margin-right: 100px;
 }
 
 header ul li:hover {
@@ -38,7 +50,24 @@ header ul li:hover {
 }
 
 header span {
+    position: absolute;
     color: rgb(182, 182, 182);
+    right: 290px;
+    top: 60px;
+}
+
+header .itemsCounter {
+    color: red;
+    font-weight: bold;
+    padding: 3px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 20px;
+}
+
+header .logoutButton {
+    margin-right: 100px;
 }
 
 header button {
@@ -48,7 +77,7 @@ header button {
     border: 0px;
 }
 
-header button:hover{
+header button:hover {
     color: gray;
     transition: .3s;
     cursor: pointer;

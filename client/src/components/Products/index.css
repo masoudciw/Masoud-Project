@@ -24,6 +24,7 @@
 
 .productsBox .productsInformations {
     padding: 10px;
+    position: relative;
 }
 
 .productsBox p {
@@ -41,12 +42,19 @@
     text-decoration: none;
 }
 
-.cardButton {
-    border: none;
+.quantity {
+    display: inline-block;
+    position: absolute;
+    left: 180px;
+    bottom: 10px;
+}
+
+.quantity button {
     padding: 10px;
     height: 32px;
     width: 32px;
     font-size: 1.5rem;
+    border: none;
     background-color: transparent;
-    float: right;
+    margin: 5px;
 }

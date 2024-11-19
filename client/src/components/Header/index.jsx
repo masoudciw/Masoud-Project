@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.svg';
 import Auth from '../../utils/auth';
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
+import { useCart } from '../../context/CartContext';
 import './index.css';
 
 const Header = () => {
@@ -8,6 +10,9 @@ const Header = () => {
         event.preventDefault();
         Auth.logout();
     };
+
+    const [state] = useCart();
+
     return (
         <>
             <header>
@@ -26,21 +31,23 @@ const Header = () => {
                                     <>
                                         <span>Hey there, {Auth.getProfile().data.username}!</span>
                                         <Link to='/account'><li>ACCOUNT</li></Link>
-                                        <li><button onClick={logout}>
+                                        <li><button className='logoutButton' onClick={logout}>
                                             LOGOUT
                                         </button></li>
                                     </>
                                 ) : (
                                     <>
                                         <Link to='/signin'><li>LOGIN</li></Link>
-                                        <Link to="/signup"><li>SIGN UP</li></Link>
+                                        <Link className='signUpButton' to="/signup"><li>SIGN UP</li></Link>
                                     </>
                                 )}
                             </div>
                         </ul>
                     </ul>
+                    <Link className='checkoutIcon' to='/checkout'><PiShoppingCartSimpleBold /></Link>
+                    {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
                 </div>
-            </header>
+            </header >
         </>
     );
 };

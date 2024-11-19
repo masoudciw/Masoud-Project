@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 import useTitle from '../../hooks/useTitle';
+import { Link } from 'react-router-dom';
 import CommentList from '../CommentComponents/CommentList';
 import CommentForm from '../CommentComponents/CommentForm';
 import './index.css';
@@ -30,7 +31,7 @@ const SingleProduct = () => {
                     <p>Description: <span>{data.post.description}</span></p>
                     <p>Posted At: <span>{data.post.createdAt}</span></p>
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Add To Cart</button>
+                        <Link to='/products' class="btn btn-danger">Back To Shop</Link>
                     </div>
                 </div>
             </div>
