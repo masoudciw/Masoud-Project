@@ -52,6 +52,7 @@ export const QUERY_POSTS = gql`
       title
       price
       description
+      category
       image
       postAuthor
       createdAt
@@ -66,6 +67,7 @@ export const QUERY_SINGLE_POST = gql`
       title
       price
       description
+      category
       image
       postAuthor
       createdAt

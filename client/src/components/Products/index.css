@@ -58,3 +58,26 @@
     background-color: transparent;
     margin: 5px;
 }
+
+.searchBox{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.searchBox input{
+   width: 300px;
+   border: 3px dashed red;
+   padding: 8px;
+   border-radius: 10px;
+}
+
+.searchBox input:focus{
+    outline: none;
+}
+
+.searchBox button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 10px;
+}

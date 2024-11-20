@@ -1,5 +1,5 @@
 .post {
-    height: 500px;
+    height: 780px;
     margin: 0 auto;
     padding-top: 25px;
 }
@@ -11,7 +11,7 @@
     padding: 30px;
     border: 0px 2px 2px 0px solid gray;
     border-radius: 15px 15px 15px 15px;
-    height: 610px;
+    height: 730px;
 }
 
 .postBox h6 {
@@ -36,6 +36,11 @@
     border: 1px solid gray;
     width: 490px;
     height: 150px;
+    margin-bottom: 30px;
+}
+
+.postBox select {
+    border: 1px solid gray;
     margin-bottom: 30px;
 }
 

@@ -85,8 +85,8 @@ const resolvers = {
     removeSecretCode: async (parent, { secretCodeId }) => {
       return SecretCode.findOneAndDelete({ _id: secretCodeId });
     },
-    addPost: async (parent, { title, price, description, image, postAuthor }) => {
-      const post = await Post.create({ title, price, description, image, postAuthor });
+    addPost: async (parent, { title, price, description, category, image, postAuthor }) => {
+      const post = await Post.create({ title, price, description, category, image, postAuthor });
 
       await User.findOneAndUpdate(
         { userId: postAuthor },
@@ -98,9 +98,9 @@ const resolvers = {
     removePost: async (parent, { postId }) => {
       return Post.findOneAndDelete({ _id: postId });
     },
-    updatePost: async (parent, { postId, title, price, description, image, postAuthor }) => {
+    updatePost: async (parent, { postId, title, price, description, category, image, postAuthor }) => {
       return Post.findByIdAndUpdate(
-        postId, { title: title, price: price, description: description, image: image, postAuthor: postAuthor }, { new: true }
+        postId, { title: title, price: price, description: description, category, image: image, postAuthor: postAuthor }, { new: true }
       )
     },
     addComment: async (parent, { postId, commentText, commentAuthor }) => {

@@ -7,4 +7,10 @@ const productQuantity = (state, _id) => {
     }
 };
 
-export { productQuantity };
+const searchProducts = (products, search) => {
+    if (!search) return products;
+    const searchedProducts = products.filter((p) => p.title.toLowerCase().includes(search));
+    return searchedProducts;
+};
+
+export { productQuantity, searchProducts };

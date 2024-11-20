@@ -7,7 +7,7 @@ import { productQuantity } from '../../helper/helper';
 
 
 const Cart = ({ datas }) => {
-    const { _id, image, title, price } = datas;
+    const { _id, image, title, price, category } = datas;
 
     const [state, dispatch] = useCart();
 
@@ -23,6 +23,7 @@ const Cart = ({ datas }) => {
             <div className='productsInformations'>
                 <p>Title : <span>{title}</span></p>
                 <p>Price : <span>${price}</span></p>
+                <p>Category : <span>{category}</span></p>
                 <Link className='productLink' to={_id}>Read More ..</Link>
                 <div className='quantity'>
                     {

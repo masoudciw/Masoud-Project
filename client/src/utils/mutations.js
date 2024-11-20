@@ -78,12 +78,13 @@ export const DELETE_SECRET_CODE = gql`
 `;
 
 export const ADD_POST = gql`
-  mutation addPost($title: String!, $price: String!, $description: String!, $image: String!, $postAuthor: String!) {
-    addPost(title: $title, price: $price, description: $description, image: $image, postAuthor: $postAuthor) {
+  mutation addPost($title: String!, $price: String!, $description: String!,$category: String!, $image: String!, $postAuthor: String!) {
+    addPost(title: $title, price: $price, description: $description,category: $category, image: $image, postAuthor: $postAuthor) {
       _id
       title
       price
       description
+      category
       image
       postAuthor
       createdAt
@@ -100,12 +101,13 @@ export const DELETE_POST = gql`
 `;
 
 export const UPDATE_POST = gql`
-  mutation updatePost($postId: ID!, $title: String!, $price: String!, $description: String!, $image: String!, $postAuthor: String!){
-    updatePost(postId: $postId, title: $title, price: $price, description: $description, image: $image, postAuthor: $postAuthor){
+  mutation updatePost($postId: ID!, $title: String!, $price: String!, $description: String!,$category: String!, $image: String!, $postAuthor: String!){
+    updatePost(postId: $postId, title: $title, price: $price, description: $description,category: $category, image: $image, postAuthor: $postAuthor){
       _id
       title
       price
       description
+      category
       image
       postAuthor
     }

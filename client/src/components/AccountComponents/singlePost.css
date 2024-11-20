@@ -1,5 +1,5 @@
 .singlePost {
-    height: 800px;
+    height: 920px;
     margin: 0 auto;
     padding-top: 5px;
 }
@@ -11,7 +11,7 @@
     padding: 30px;
     border: 0px 2px 2px 0px solid gray;
     border-radius: 15px 15px 15px 15px;
-    height: 780px;
+    height: 890px;
 }
 
 .singlePostContainer h6 {
@@ -36,6 +36,11 @@
     border: 1px solid gray;
     width: 490px;
     height: 150px;
+    margin-bottom: 30px;
+}
+
+.singlePostContainer select {
+    border: 1px solid gray;
     margin-bottom: 30px;
 }
 

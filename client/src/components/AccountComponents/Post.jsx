@@ -15,15 +15,16 @@ const Post = () => {
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
+    const [category, setCategory] = useState('');
     const [image, setImage] = useState('');
     const [createPost, { loading, data, error }] = useMutation(ADD_POST);
 
 
     const handleCreatePost = async () => {
-        if (title, price, description, image) {
+        if (title, price, description, category, image) {
             try {
                 const { data } = await createPost({
-                    variables: { title: title, price: price, description: description, image: image, postAuthor: Auth.getProfile().data._id },
+                    variables: { title: title, price: price, description: description, category: category, image: image, postAuthor: Auth.getProfile().data._id },
                 });
             } catch (err) {
                 console.error(err);
@@ -54,6 +55,16 @@ const Post = () => {
                             <label for="description">Description</label>
                             <div class="col-sm-10">
                                 <textarea type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="description" placeholder="Description Of Product" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="category">Category</label>
+                            <div class="col-sm-10">
+                                <select value={category} onChange={(e) => { setCategory(e.target.value) }} name='category' class="form-control" id="category" placeholder="Category Of Product">
+                                    <option name="none" id="none">None</option>
+                                    <option name="piano" id="piano">Piano</option>
+                                    <option name="guitar" id="guitar">Guitar</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">

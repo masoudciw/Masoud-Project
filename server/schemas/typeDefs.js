@@ -19,6 +19,7 @@ const typeDefs = `
     title: String
     price: String
     description: String
+    category: String
     image: String
     postAuthor: String
     createdAt: String
@@ -55,9 +56,9 @@ const typeDefs = `
     updateUserType(userId: ID!, userType: String!): User
     updateEmailAddress(userId: ID!, email: String!): User
     updatePassword(userId: ID!, password: String!): User
-    addPost(title: String!, price: String!, description: String!, image: String!, postAuthor: String! ): Post
+    addPost(title: String!, price: String!, description: String!,category: String!, image: String!, postAuthor: String! ): Post
     removePost(postId: ID!): Post
-    updatePost(postId: ID!, title: String!, price: String!, description: String!, image: String!, postAuthor: String!): Post
+    updatePost(postId: ID!, title: String!, price: String!, description: String!,category: String!, image: String!, postAuthor: String!): Post
     addComment(
       postId: ID!
       commentText: String!

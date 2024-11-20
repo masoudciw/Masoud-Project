@@ -20,9 +20,10 @@ const SinglePost = () => {
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
+    const [category, setCategory] = useState('');
     const [image, setImage] = useState('');
     const [deletePost, { error }] = useMutation(DELETE_POST, { variables: { postId: postId } });
-    const [updatePost, { status }] = useMutation(UPDATE_POST, { variables: { postId: postId, title: title, price: price, description: description, image: image, postAuthor: Auth.getProfile().data._id } });
+    const [updatePost, { status }] = useMutation(UPDATE_POST, { variables: { postId: postId, title: title, price: price, description: description, category: category, image: image, postAuthor: Auth.getProfile().data._id } });
 
     const handleDeletePost = async (postId) => {
         navigate("/account");
@@ -42,7 +43,7 @@ const SinglePost = () => {
         alert('Post Updated Successfully!');
         try {
             const { data } = await updatePost({
-                variables: { postId, title, price, description, image, postAuthor },
+                variables: { postId, title, price, description, category, image, postAuthor },
             });
         } catch (err) {
             console.error(err);
@@ -80,6 +81,16 @@ const SinglePost = () => {
                             <label for="inputDescription">Description</label>
                             <div class="col-sm-10">
                                 <textarea type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="inputDescription" placeholder={data.post.description} />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="category">Category</label>
+                            <div class="col-sm-10">
+                                <select value={category} onChange={(e) => { setCategory(e.target.value) }} name='category' class="form-control" id="category" placeholder="Category Of Product">
+                                    <option name="none" id="none">None</option>
+                                    <option name="piano" id="piano">Piano</option>
+                                    <option name="guitar" id="guitar">Guitar</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">

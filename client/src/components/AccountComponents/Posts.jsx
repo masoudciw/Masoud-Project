@@ -26,6 +26,7 @@ const Posts = () => {
                                     <td><span>Title:</span></td>
                                     <td><span>Price:</span></td>
                                     <td><span className='descriptionBox'>Description:</span></td>
+                                    <td><span>Category:</span></td>
                                     <td><span>Post Author:</span></td>
                                     <td><span>Created At:</span></td>
                                     {/* <td><span>Image:</span></td> */}
@@ -37,6 +38,7 @@ const Posts = () => {
                                     <td><p>{post.title}</p></td>
                                     <td><p>${post.price}</p></td>
                                     <td><p className='descriptionBox'>{post.description}</p></td>
+                                    <td><p>{post.category}</p></td>
                                     <td><p>{post.postAuthor}</p></td>
                                     <td><p>{post.createdAt}</p></td>
                                     {/* <td><p>{post.image}</p></td> */}

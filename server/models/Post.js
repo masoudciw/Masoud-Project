@@ -23,6 +23,11 @@ const postSchema = new Schema({
         maxlength: 280,
         trim: true,
     },
+    category: {
+        type: String,
+        required: 'You need to choose a category!',
+        trim: true,
+    },
     image: {
         type: String,
         required: 'You need to leave a image!',
