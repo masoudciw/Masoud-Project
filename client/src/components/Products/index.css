@@ -9,7 +9,7 @@
 
 .productsBox {
     width: 300px;
-    height: 400px;
+    height: 450px;
     margin-bottom: 70px;
     border: 2px solid gray;
     border-radius: 10px;
@@ -59,25 +59,60 @@
     margin: 5px;
 }
 
-.searchBox{
+.filterBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.searchBox {
     margin-top: 60px;
     margin-left: 100px;
 }
 
-.searchBox input{
-   width: 300px;
-   border: 3px dashed red;
-   padding: 8px;
-   border-radius: 10px;
+.searchBox input {
+    width: 300px;
+    border: 3px dashed red;
+    padding: 8px;
+    border-radius: 10px;
 }
 
-.searchBox input:focus{
+.searchBox input:focus {
     outline: none;
 }
 
-.searchBox button{
+.searchBox button {
     background-color: transparent;
     border: none;
     font-size: 30px;
     margin-left: 10px;
+}
+
+.categoryBox {
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+
+.categoryBox .categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categoryBox .categories p {
+    margin-left: 5px;
+}
+
+.categoryBox ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.categoryBox ul li:hover {
+    cursor: pointer;
+    color: red;
+    transition: .3s;
 }

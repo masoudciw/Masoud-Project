@@ -13,4 +13,10 @@ const searchProducts = (products, search) => {
     return searchedProducts;
 };
 
-export { productQuantity, searchProducts };
+const filterProducts = (products, category) => {
+    if (!category) return products;
+    const filteredProducts = products.filter((p) => p.category === category);
+    return filteredProducts;
+};
+
+export { productQuantity, searchProducts, filterProducts };
