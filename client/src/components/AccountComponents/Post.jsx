@@ -17,10 +17,11 @@ const Post = () => {
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
     const [image, setImage] = useState('');
+
     const [createPost, { loading, data, error }] = useMutation(ADD_POST);
 
 
-    const handleCreatePost = async () => {
+    const handleCreatePost = async (e) => {
         if (title, price, description, category, image) {
             try {
                 const { data } = await createPost({

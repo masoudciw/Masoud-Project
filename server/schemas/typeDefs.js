@@ -38,6 +38,7 @@ const typeDefs = `
     user: User
   }
 
+
   type Query {
     users: [User]!
     user(userId: ID!): User
@@ -65,11 +66,10 @@ const typeDefs = `
       commentAuthor: String!
     ): Post
     removeComment(postId: ID!, commentId: ID!): Post
+    
   }
   `;
 
 module.exports = typeDefs;
-// uploadFile(File: Upload!): File!
-// type File{
-//   url: String!
-// }
+
+

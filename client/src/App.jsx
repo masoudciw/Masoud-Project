@@ -11,9 +11,9 @@ import {
   ApolloProvider,
   createHttpLink,
   split,
+  ApolloLink
 } from '@apollo/client';
-// import { createUploadLink } from 'apollo-upload-client';
-// import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
+import createUploadLink from 'apollo-upload-client/createUploadLink.mjs';
 import { setContext } from '@apollo/client/link/context';
 import CartProvider from './context/CartContext';
 import './App.css';
@@ -21,10 +21,7 @@ import './App.css';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
-
-// const uploadLink = createUploadLink({
-//   uri: `http://localhost:3000/`
-// });
+const uploadLink = createUploadLink({ uri: '/graphql' });
 
 const authLink = setContext((_, { headers }) => {
 
@@ -38,9 +35,20 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+const link = ApolloLink.split(
+
+  // Check if the operation is an upload
+
+  (operation) => operation.variables.file !== undefined,
+
+  uploadLink,
+
+  authLink.concat(httpLink)
+
+);
+
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  // uploadLink
+  link,
 
   cache: new InMemoryCache(),
 });

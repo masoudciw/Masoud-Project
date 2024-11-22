@@ -138,8 +138,6 @@ export const ADD_COMMENT = gql`
   }
 `;
 
-
-
 export const DELETE_COMMENT = gql`
   mutation removeComment($postId: ID!, $commentId: ID!) {
     removeComment(postId: $postId, commentId: $commentId){
@@ -147,14 +145,3 @@ export const DELETE_COMMENT = gql`
       }
     }
 `;
-
-// export const DELETE_COMMENT = gql`
-//   mutation removeComment($postId: ID!, $commentId: ID!) {
-//     removeComment(postId: $postId, commentId: $commentId){
-//       _id
-//       comments{
-//         _id
-//       }
-//       }
-//     }
-// `;
