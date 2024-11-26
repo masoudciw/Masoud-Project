@@ -8,25 +8,36 @@
 }
 
 .product .productImage {
-    width: 500px;
-    height: 500px;
-    background-color: gainsboro;
+    width: 300px;
+    height: 300px;
+    margin-right: 150px;
+}
+
+
+.product .productImage {
+    width: 300px;
+    height: 300px;
+}
+
+.product .productImage img {
+    width: 300px;
+    height: 300px;
 }
 
 .product .productInfo {
     width: 900px;
-    height: 500px;
+    height: 300px;
     padding: 10px;
 }
 
-.product .productInfo p{
+.product .productInfo p {
     color: black;
     font-weight: bold;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.product .productInfo span{
+.product .productInfo span {
     color: gray;
     font-size: 18px;
 }

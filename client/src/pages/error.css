@@ -1,0 +1,27 @@
+.errorPage {
+    text-align: center;
+}
+
+.errorPage h3 {
+    font-weight: bold;
+    font-size: 100px;
+    color: rgb(0, 0, 142);
+    margin-bottom: 50px;
+}
+
+.errorPage p {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.errorPage span {
+    display: block;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.errorPage img {
+    width: 300px;
+}

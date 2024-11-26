@@ -41,47 +41,49 @@ const CommentForm = ({ postId }) => {
   };
 
   return (
-    <div className="commentFormBox"> 
-      <h4>What are your thoughts on this Product?</h4>
+    <>
+      <div className="commentFormBox">
+        <h4>What are your thoughts on this Product?</h4>
 
-      {Auth.loggedIn() ? (
-        <>
-          <p
-            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
-              }`}
-          >
-            Character Count: {characterCount}/280
-            {error && <span className="ml-2">{error.message}</span>}
+        {Auth.loggedIn() ? (
+          <>
+            <p
+              className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+                }`}
+            >
+              Character Count: {characterCount}/280
+              {error && <span className="ml-2">{error.message}</span>}
+            </p>
+            <form
+              className="commentFormWriteBox"
+              onSubmit={handleFormSubmit}
+            >
+              <div className="col-12 col-lg-9">
+                <textarea
+                  name="commentText"
+                  placeholder="Add your comment..."
+                  value={commentText}
+                  className="form-input w-100"
+                  style={{ lineHeight: '1.5', resize: 'vertical' }}
+                  onChange={handleChange}
+                ></textarea>
+              </div>
+
+              <div className="col-12 col-lg-3">
+                <button className="btn btn-primary btn-block py-3" type="submit">
+                  Add Comment
+                </button>
+              </div>
+            </form>
+          </>
+        ) : (
+          <p>
+            You need to be logged in to share your thoughts. Please{' '}
+            <Link to="/signin">login</Link> or <Link to="/signup">signup.</Link>
           </p>
-          <form
-            className="commentFormWriteBox"
-            onSubmit={handleFormSubmit}
-          >
-            <div className="col-12 col-lg-9">
-              <textarea
-                name="commentText"
-                placeholder="Add your comment..."
-                value={commentText}
-                className="form-input w-100"
-                style={{ lineHeight: '1.5', resize: 'vertical' }}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-
-            <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Comment
-              </button>
-            </div>
-          </form>
-        </>
-      ) : (
-        <p>
-          You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/signin">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 

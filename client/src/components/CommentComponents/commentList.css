@@ -12,6 +12,7 @@
 
 .commentBox .commentBoxInfo {
     position: relative;
+    border-radius: 10px;
 }
 
 .commentBox .commentLink {

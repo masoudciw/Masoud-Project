@@ -37,7 +37,7 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-            <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+            <div className="commentProductBox" >
                 <CommentForm postId={data.post._id} />
             </div>
             <div className="my-5">

@@ -1,5 +1,7 @@
 import { useRouteError } from 'react-router-dom';
 import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
+import errorPage from '../assets/error-page.jpg';
+import './error.css';
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -7,16 +9,14 @@ export default function ErrorPage() {
 
   return (
     <>
-      <div id="error-page">
-        <h1>Oops!</h1>
+      <div className='errorPage'>
+        <h3>Oops!</h3>
         <p>Sorry, an unexpected error has occurred.</p>
-        <p>
-          <i>{error.statusText || error.message}</i>
-        </p>
+        <img src={errorPage} alt='Error Page Icon' />
+        <span>{error.statusText || error.message}</span>
       </div>
       <div>
 
-          // Adds messages only in a dev environment
         {loadDevMessages()}
         {loadErrorMessages()}
 

@@ -89,3 +89,15 @@
     padding: 10px;
     background-color: rgb(234, 234, 234);
 }
+
+.emptyCartBox {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.emptyCartBox h3 {
+    margin: 0 auto;
+    color: rgb(0, 0, 142);
+}
