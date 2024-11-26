@@ -145,3 +145,13 @@ export const DELETE_COMMENT = gql`
       }
     }
 `;
+
+// export const UPLOAD_FILE = gql`
+// mutation UploadFile($file: Upload!) {
+//   uploadFile(file: $file) {
+//     id
+//     filename
+//     url
+//   }
+// }
+// `;

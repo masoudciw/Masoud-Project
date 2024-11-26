@@ -18,8 +18,14 @@
 .productsBox .productsImageBox {
     width: 299.7px;
     height: 250px;
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
     border-radius: 10px;
+    text-align: center;
+}
+
+.productsBox .productsImageBox img{
+    width: 245px;
+    height: 245px;
 }
 
 .productsBox .productsInformations {

@@ -17,6 +17,7 @@ const SingleProduct = () => {
         variables: { postId: postId },
     });
 
+
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -24,7 +25,7 @@ const SingleProduct = () => {
     return (
         <>
             <div className='product'>
-                <div className='productImage'>{data.post.image}</div>
+                <div className='productImage'><img src={data.post.image} /></div>
                 <div className='productInfo'>
                     <p>Model: <span>{data.post.title}</span></p>
                     <p>Price: <span>${data.post.price}</span></p>

@@ -19,7 +19,7 @@ const Cart = ({ datas }) => {
 
     return (
         <>
-            <Link className='productLink' to={_id}><div className='productsImageBox'>{image}</div></Link>
+            <Link className='productLink' to={_id}><div className='productsImageBox'><img src={image} /></div></Link>
             <div className='productsInformations'>
                 <p>Title : <span>{title}</span></p>
                 <p>Price : <span>${price}</span></p>

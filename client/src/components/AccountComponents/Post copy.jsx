@@ -3,7 +3,6 @@ import { ADD_POST } from '../../utils/mutations';
 import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import useTitle from '../../hooks/useTitle';
 import Auth from '../../utils/auth';
 import './post.css';
@@ -20,17 +19,9 @@ const Post = () => {
     const [image, setImage] = useState(null);
 
     const handleFileChange = (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-
-        reader.onloadend = () => {
-            setImage(reader.result);
-        };
-
-        if (file) {
-            reader.readAsDataURL(file);
-        }
+        setImage(event.target.files[0]);
     };
+
     const [createPost, { loading, data, error }] = useMutation(ADD_POST);
 
 
@@ -40,7 +31,6 @@ const Post = () => {
                 const { data } = await createPost({
                     variables: { title: title, price: price, description: description, category: category, image: image, postAuthor: Auth.getProfile().data._id },
                 });
-                await axios.post("/api/upload", { image });
             } catch (err) {
                 console.error(err);
             }

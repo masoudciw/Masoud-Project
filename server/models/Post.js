@@ -28,13 +28,23 @@ const postSchema = new Schema({
         required: 'You need to choose a category!',
         trim: true,
     },
-    image: {
+    image:
+    {
         type: String,
-        required: 'You need to leave a image!',
-        minlength: 1,
-        maxlength: 280,
-        trim: true,
     },
+    // image:
+    // {
+    //     type: String,
+    //     required: 'You need to choose a image!',
+    //     minlength: 1,
+    //     maxlength: 280,
+    //     trim: true,
+    // },
+    // image:
+    // {
+    //     data: String,
+    //     contentType: String
+    // },
     postAuthor: {
         type: String,
         required: true,

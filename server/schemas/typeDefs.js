@@ -33,11 +33,11 @@ const typeDefs = `
     createdAt: String
   }
 
+
   type Auth {
     token: ID!
     user: User
   }
-
 
   type Query {
     users: [User]!
@@ -47,6 +47,7 @@ const typeDefs = `
     posts: [Post]!
     post(postId: ID!): Post
   }
+
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!, userType: String!): Auth
@@ -66,7 +67,6 @@ const typeDefs = `
       commentAuthor: String!
     ): Post
     removeComment(postId: ID!, commentId: ID!): Post
-    
   }
   `;
 

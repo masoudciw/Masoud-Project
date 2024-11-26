@@ -21,7 +21,7 @@ import './App.css';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
-const uploadLink = createUploadLink({ uri: '/graphql' });
+const uploadLink = createUploadLink({ uri: 'http://localhost:3000/' });
 
 const authLink = setContext((_, { headers }) => {
 
