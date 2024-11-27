@@ -39,6 +39,17 @@
     margin-bottom: 30px;
 }
 
+.postBox span{
+    font-size: 15px;
+    color: rgba(128, 128, 128, 0.821);
+    margin-left: 20px;
+}
+
+.postBox span i{
+    font-size: 18px;
+    color: red;
+}
+
 .postBox select {
     border: 1px solid gray;
     margin-bottom: 30px;

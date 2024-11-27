@@ -83,7 +83,7 @@ const Post = () => {
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="image">Image</label>
+                            <label for="image">Image <span><i>*</i> The Picture Should Be Under 100kb and JPG Format </span></label>
                             <div class="col-sm-10">
                                 <input type="file" name='image' onChange={handleFileChange} class="form-control" id="image" />
                             </div>
