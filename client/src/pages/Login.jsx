@@ -14,24 +14,25 @@ import './login.css';
 
 const Login = () => {
 
-    const { secretCodeId } = useParams();
+    // const { secretCodeId } = useParams();
     useTitle("Masoud | Sign In");
     const [login, { error, data }] = useMutation(LOGIN_USER);
-    const [secretKey, setsecretKey] = useState('');
+    // const [secretKey, setsecretKey] = useState('');
     // let [secretKeyss] = useState({});
-    const [formState, setFormState] = useState({ email: '', password: '', userType: '' });
+    const [formState, setFormState] = useState({ email: '', password: '' });
+    // const [formState, setFormState] = useState({ email: '', password: '', userType: '' });
 
 
 
-    const { loading, data: data2 } = useQuery(QUERY_SECRET_CODES, { variables: { secretCodeId: secretCodeId } });
-    if (loading) {
-        return <h3>Loading...</h3>;
-    }
+    // const { loading, data: data2 } = useQuery(QUERY_SECRET_CODES, { variables: { secretCodeId: secretCodeId } });
+    // if (loading) {
+    //     return <h3>Loading...</h3>;
+    // }
 
-    const secretKeys = data2.secretCodes.map((secretCode) => {
-        const secretCodeValue = secretCode.secretCodeText;
-        return secretCodeValue;
-    });
+    // const secretKeys = data2.secretCodes.map((secretCode) => {
+    //     const secretCodeValue = secretCode.secretCodeText;
+    //     return secretCodeValue;
+    // });
 
     // for (let i = 0; i < secretKeys.length; i++) {
     //     secretKeyss = secretKeys[i];
@@ -50,58 +51,78 @@ const Login = () => {
 
 
     const handleFormSubmit = async (event) => {
-        for (let i = 0; i < secretKeys.length; i++) {
-            let secretKeyss = secretKeys[i];
-            console.log(secretKeyss)
-            if (formState.userType === 'ADMIN' && secretKey != secretKeyss) {
-                event.preventDefault();
-                alert('Invalid Secret Key! Please Try Again.')
+        // for (let i = 0; i < secretKeys.length; i++) {
+        // let secretKeyss = secretKeys[i];
+        // console.log(secretKeyss)
+        // if (formState.userType === 'ADMIN' && secretKey != secretKeyss) {
+        // event.preventDefault();
+        // alert('Invalid Secret Key! Please Try Again.')
 
-            } else if (formState.userType === 'ADMIN' && secretKey === secretKeyss) {
-                event.preventDefault();
-                console.log(formState);
-                try {
-                    const { data } = await login({
-                        variables: { ...formState },
-                    });
+        // } else if (formState.userType === 'ADMIN' && secretKey === secretKeyss) {
+        //     event.preventDefault();
+        //     try {
+        //         const { data } = await login({
+        //             variables: { ...formState },
+        //         });
 
-                    Auth.login(data.login.token);
-                } catch (e) {
-                    console.error(e);
-                }
+        //         Auth.login(data.login.token);
+        //     } catch (e) {
+        //         console.error(e);
+        //     }
 
-                setFormState({
-                    email: '',
-                    password: '',
-                    userType: ''
+        //     setFormState({
+        //         email: '',
+        //         password: '',
+        //         userType: ''
+        //     });
+
+
+        // } else if (formState.userType === 'USER') {
+        if (formState.username === 'masoud') {
+            event.preventDefault();
+            formState.userType = 'ADMIN';
+            console.log(formState);
+            try {
+                const { data } = await login({
+                    variables: { ...formState },
                 });
 
-
-            } else if (formState.userType === 'USER') {
-                event.preventDefault();
-                console.log(formState);
-                try {
-                    const { data } = await login({
-                        variables: { ...formState },
-                    });
-
-                    Auth.login(data.login.token);
-                } catch (e) {
-                    console.error(e);
-                }
-
-                setFormState({
-                    email: '',
-                    password: '',
-                    userType: ''
-                });
-
-
-            } else {
-                event.preventDefault();
-                alert('Please Select The User Type.')
+                Auth.login(data.login.token);
+            } catch (e) {
+                console.error(e);
             }
+
+            setFormState({
+                email: '',
+                password: '',
+                // userType: ''
+            });
+
+        }else{
+            event.preventDefault();
+            formState.userType = 'USER';
+            console.log(formState);
+            try {
+                const { data } = await login({
+                    variables: { ...formState },
+                });
+
+                Auth.login(data.login.token);
+            } catch (e) {
+                console.error(e);
+            }
+
+            setFormState({
+                email: '',
+                password: '',
+                // userType: ''
+            }); 
         }
+        // } else {
+        //     event.preventDefault();
+        //     alert('Please Select The User Type.')
+        // }
+        // }
     };
 
 
@@ -116,20 +137,20 @@ const Login = () => {
                 ) : (
                     <form className='formLoginBox' onSubmit={handleFormSubmit}>
                         <h6>Sign in or create a new account in order to save items or add to your wish list.</h6>
-                        <div className='userType'>
+                        {/* <div className='userType'>
                             <span>Login As:</span>
                             <input type="radio" name='userType' value='USER' onChange={(e) => setFormState({ ...formState, userType: e.target.value })} /> User
                             <input type="radio" name='userType' value='ADMIN' onChange={(e) => setFormState({ ...formState, userType: e.target.value })} /> Admin
-                        </div>
-                        {formState.userType === 'ADMIN' ? (
-                            <div class="form-group row">
+                        </div> */}
+                        {/* {formState.userType === 'ADMIN' ? ( */}
+                        {/* <div class="form-group row">
                                 <label for="secretKey">Secret Key</label>
                                 <div class="col-sm-10">
                                     <input type="password" name='secretKey' class="form-control" id="secretKey" placeholder="Type The Secret Key"
                                         onChange={(e) => setsecretKey(e.target.value)} />
                                 </div>
                             </div>
-                        ) : null}
+                        ) : null} */}
                         <div class="form-group row">
                             <label for="email">Your Email</label>
                             <div class="col-sm-10">

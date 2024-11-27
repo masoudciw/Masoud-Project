@@ -12,12 +12,12 @@ const SignUp = () => {
 
     useTitle("Masoud | Sign Up");
     
-    const [secretKey, setsecretKey] = useState('');
+    // const [secretKey, setsecretKey] = useState('');
     const [formState, setFormState] = useState({
         username: '',
         email: '',
         password: '',
-        userType: ''
+        userType: 'USER'
     });
     const [addUser, { error, data }] = useMutation(ADD_USER);
 
@@ -31,12 +31,11 @@ const SignUp = () => {
     };
 
     const handleFormSubmit = async (event) => {
-        if (formState.userType === 'ADMIN' && secretKey != 'MASOUD') {
+        // if (formState.userType === 'ADMIN' && secretKey != 'MASOUD') {
+            // event.preventDefault();
+            // alert('Invalid Secret Key! Please Try Again.')
+        // } else if (formState.userType === 'ADMIN' && secretKey === 'MASOUD') {
             event.preventDefault();
-            alert('Invalid Secret Key! Please Try Again.')
-        } else if (formState.userType === 'ADMIN' && secretKey === 'MASOUD') {
-            event.preventDefault();
-            console.log(formState);
             try {
                 const { data } = await addUser({
                     variables: { ...formState },
@@ -55,24 +54,24 @@ const SignUp = () => {
             });
 
 
-        } else if (formState.userType === 'USER') {
-            event.preventDefault();
-            console.log(formState);
-            try {
-                const { data } = await addUser({
-                    variables: { ...formState },
-                });
+        // } else if (formState.userType === 'USER') {
+        //     event.preventDefault();
+        //     console.log(formState);
+        //     try {
+        //         const { data } = await addUser({
+        //             variables: { ...formState },
+        //         });
 
-                Auth.login(data.addUser.token);
-            } catch (e) {
-                console.error(e);
-            }
+        //         Auth.login(data.addUser.token);
+        //     } catch (e) {
+        //         console.error(e);
+        //     }
 
 
-        } else {
-            event.preventDefault();
-            alert('Please Select The User Type.')
-        }
+        // } else {
+        //     event.preventDefault();
+        //     alert('Please Select The User Type.')
+        // }
 
     };
 
@@ -87,12 +86,12 @@ const SignUp = () => {
                 ) : (
                     <form className='formSignUpBox' onSubmit={handleFormSubmit}>
                         <h6>Create New Account</h6>
-                        <div className='userType'>
+                        {/* <div className='userType'>
                             <span>SignUp As:</span>
                             <input type="radio" name='userType' value='USER' onChange={(e) => setFormState({ ...formState, userType: e.target.value })} /> User
                             <input type="radio" name='userType' value='ADMIN' onChange={(e) => setFormState({ ...formState, userType: e.target.value })} /> Admin
-                        </div>
-                        {formState.userType === 'ADMIN' ? (
+                        </div> */}
+                        {/* {formState.userType === 'ADMIN' ? (
                             <div class="form-group row">
                                 <label for="secretKey">Secret Key</label>
                                 <div class="col-sm-10">
@@ -100,7 +99,7 @@ const SignUp = () => {
                                         onChange={(e) => setsecretKey(e.target.value)} />
                                 </div>
                             </div>
-                        ) : null}
+                        ) : null} */}
                         <div class="form-group row">
                             <label for="inputFirstName">Username *</label>
                             <div class="col-sm-10">
