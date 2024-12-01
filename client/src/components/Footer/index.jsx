@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo.svg';
 import './index.css';
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='services'>
-                    <h4>SERVICESP</h4>
+                    <h4>SERVICES</h4>
                     <ul>
                         <Link style={{ textDecoration: 'none' }} to='/'><li>Piano Tuning</li></Link>
                         <Link style={{ textDecoration: 'none' }} to='/'><li>Piano Rentals</li></Link>

@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <div className='contactInfo'>
                     <h7>Our Location</h7>
                     <h8>Cherry Hill Showroom</h8>
-                    <p>Our Cherry Hill, NJ showroom, located on Rt. 70, seconds off 295, <br /> is geared up 
+                    <p>Our Cherry Hill, NJ showroom, located on Rt. 70, seconds off 295, <br /> is geared up
                         to serve all of our clients in New Jersey,New York, and beyond.<br />
                         We welcome you to visit, browse, learn, and enjoy!</p>
                     <ul>

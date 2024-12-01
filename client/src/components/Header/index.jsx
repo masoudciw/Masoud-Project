@@ -25,27 +25,23 @@ const Header = () => {
                         <Link to='/products'><li>PRODUCTS</li></Link>
                         <Link to='/aboutus'><li>ABOUT US</li></Link>
                         <Link to='/contactus'><li>CONTACT US</li></Link>
-                        <ul>
-                            <div>
-                                {Auth.loggedIn() ? (
-                                    <>
-                                        <span>Hey there, {Auth.getProfile().data.username}!</span>
-                                        <Link to='/account'><li>ACCOUNT</li></Link>
-                                        <li><button className='logoutButton' onClick={logout}>
-                                            LOGOUT
-                                        </button></li>
-                                    </>
-                                ) : (
-                                    <>
-                                        <Link to='/signin'><li>LOGIN</li></Link>
-                                        <Link className='signUpButton' to="/signup"><li>SIGN UP</li></Link>
-                                    </>
-                                )}
-                            </div>
-                        </ul>
+                        {Auth.loggedIn() ? (
+                            <>
+                                <span>Hey there, {Auth.getProfile().data.username}!</span>
+                                <Link to='/account'><li>ACCOUNT</li></Link>
+                                <li><button className='logoutButton' onClick={logout}>
+                                    LOGOUT
+                                </button></li>
+                            </>
+                        ) : (
+                            <>
+                                <Link to='/signin'><li>LOGIN</li></Link>
+                                <Link className='signUpButton' to="/signup"><li>SIGN UP</li></Link>
+                            </>
+                        )}
+                        <Link  to='/checkout'><li><PiShoppingCartSimpleBold className='checkoutIcon'/></li></Link>
+                        {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
                     </ul>
-                    <Link className='checkoutIcon' to='/checkout'><PiShoppingCartSimpleBold /></Link>
-                    {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
                 </div>
             </header >
         </>

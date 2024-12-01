@@ -11,7 +11,7 @@ const Business = () => {
                     <p>We Help You to Find Your New Piano or Sell Your Piano at the Best Price!</p>
                 </div>
                 <div>
-                    <Link to='/'><button className='buyButton'>Buy Your Piano</button></Link>
+                    <Link to='/products'><button className='buyButton'>Buy Your Piano</button></Link>
                     <Link to='/contactus'><button className='sellButton'>Sell Your Piano</button></Link>
                 </div>
             </div>

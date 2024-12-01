@@ -70,3 +70,24 @@
 .userType span {
     font-weight: bold;
 }
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+    .formSignUpBox {
+        width: 450px;
+        height: 550px;
+    }
+
+    .formSignUpBox input {
+        width: 390px;
+    }
+
+    .formSignUpBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 390px;
+    }
+
+    .formSignUpBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -175px;
+    }
+}

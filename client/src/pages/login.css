@@ -69,7 +69,7 @@
     width: 490px;
 }
 
-.userType{
+.userType {
     background-color: #ffffff;
     width: 220px;
     text-align: left;
@@ -82,10 +82,32 @@
     font-size: 15px;
 }
 
-.userType input{
+.userType input {
     width: 10px;
 }
 
-.userType span{
+.userType span {
     font-weight: bold;
+}
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+    .formLoginBox {
+        width: 450px;
+        height: 640px;
+    }
+
+    .formLoginBox input {
+        width: 390px;
+    }
+
+    .formLoginBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 390px;
+    }
+
+    .formLoginBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -175px;
+    }
+
 }

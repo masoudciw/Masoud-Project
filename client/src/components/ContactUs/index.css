@@ -89,15 +89,96 @@
     color: #ffffffe5;
 }
 
-.contactInfo ul{
-    margin-top:50px;
+.contactInfo ul {
+    margin-top: 50px;
     display: inline-block;
 }
 
-.contactInfo ul li{
+.contactInfo ul li {
     list-style: none;
 }
 
 .contactInfo img {
     width: 30px;
+}
+
+@media only screen and (min-width:900px) and (max-width:1117.99px) {
+    .contact {
+        height: 1500px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .contact .formBox {
+        width: 550px;
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 0px 0px 2px 2px solid gray;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .contactInfo {
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 2px 2px 2px 2px solid gray;
+        border-radius: 15px 15px 0px 0px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .contact {
+        height: 1500px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .contact .formBox {
+        width: 550px;
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 0px 0px 2px 2px solid gray;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .contactInfo {
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 2px 2px 2px 2px solid gray;
+        border-radius: 15px 15px 0px 0px;
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .contact {
+        height: 1500px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .contact .formBox {
+        width: 500px;
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 0px 0px 2px 2px solid gray;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .contactInfo {
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 2px 2px 2px 2px solid gray;
+        border-radius: 15px 15px 0px 0px;
+        width: 500px;
+    }
 }
