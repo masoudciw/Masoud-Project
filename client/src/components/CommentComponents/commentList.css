@@ -31,3 +31,64 @@
     background-color: transparent;
     transition: .3s;
 }
+
+@media only screen and (min-width:1200px) and (max-width:1500px) {
+    .commentBox {
+        width: 1000px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+    .commentBox {
+        width: 800px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    .commentBox {
+        width: 600px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .commentBox {
+        width: 400px;
+        margin: 30px auto;
+    }
+    .commentBox .commentLink {
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        padding: 3px;
+        background-color: red;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .commentBox {
+        width: 350px;
+        margin: 30px auto;
+    }
+    .commentBox .commentLink {
+        position: absolute;
+        right: 5px;
+        top: 90px;
+        padding: 3px;
+        background-color: red;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}

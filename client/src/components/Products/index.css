@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.productsBox .productsImageBox img{
+.productsBox .productsImageBox img {
     width: 245px;
     height: 245px;
 }
@@ -65,7 +65,7 @@
     margin: 5px;
 }
 
-.filterBox{
+.filterBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -121,4 +121,78 @@
     cursor: pointer;
     color: red;
     transition: .3s;
+}
+
+@media only screen and (min-width:1200px) and (max-width:1500px) {
+    .products {
+        margin: 100px auto;
+        width: 1400px;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1400px) {
+    .products {
+        margin: 100px auto;
+        width: 1200px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1200px) {
+    .products {
+        margin: 100px auto;
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1000px) {
+    .products {
+        margin: 100px auto;
+        width: 800px;
+    }
+
+    .searchBox {
+        margin: 60px auto;
+    }
+
+    .categoryBox {
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:800px) {
+    .products {
+        margin: 100px auto;
+        width: 620px;
+    }
+
+    .searchBox {
+        margin: 60px auto;
+    }
+
+    .categoryBox {
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:650px) {
+    .products {
+        margin: 100px auto;
+        display: block;
+    }
+
+    .productsBox {
+        margin: 70px auto;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .products {
+        margin: 100px auto;
+        display: block;
+        width: 350px;
+    }
+
+    .productsBox {
+        margin: 70px auto;
+    }
 }

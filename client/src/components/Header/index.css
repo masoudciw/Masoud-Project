@@ -78,10 +78,138 @@ header button:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width:1000px) and (max-width:1300px) {
     header ul li {
         margin-left: 60px;
     }
+}
+
+@media only screen and (min-width:800px) and (max-width:1200px) {
+    header ul li {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1200px) {
+    header {
+        height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:984px) {
+    header {
+        height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:863.5px) {
+    header {
+        height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:789.5px) {
+    header {
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    header img {
+        width: 70px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+
+    header .checkoutIcon {
+        font-size: 25px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width:628px) {
+    header {
+        height: 130px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        width: 70px;
+        float: left;
+        margin-left: 13px;
+        margin-top: 0px;
+    }
+
+    header .checkoutIcon {
+        font-size: 25px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+}
+
+/* 
+
+@media only screen and (max-width:550px) {
+    header {
+        background-color: red;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        width: 70px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 14px;
+    }
+} */
+
+
+
+
+
+/* @media only screen and (max-width: 1400px) {
+    header ul li {
+        margin-left: 60px;
+    }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -221,4 +349,4 @@ header button:hover {
         color: #ffffff;
         margin-right: 45px;
     }
-}
+} */
