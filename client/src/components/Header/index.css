@@ -61,10 +61,6 @@ header .itemsCounter {
     font-size: 20px;
 }
 
-header .logoutButton {
-    margin-right: 100px;
-}
-
 header button {
     font-size: 20px;
     color: #ffffff;
@@ -78,15 +74,64 @@ header button:hover {
     cursor: pointer;
 }
 
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+    header ul li {
+        margin-left: 60px;
+    }
+
+    header .logoutButton {
+        margin-right: 0px;
+    }
+
+    header button {
+        font-size: 20px;
+        color: #ffffff;
+        background-color: black;
+        border: 0px;
+    }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 260px;
+        top: 60px;
+    }
+}
+
 @media only screen and (min-width:1000px) and (max-width:1300px) {
     header ul li {
         margin-left: 60px;
+    }
+
+    header .logoutButton {
+        margin-right: -10px;
+    }
+
+    header button {
+        font-size: 20px;
+        color: #ffffff;
+        background-color: black;
+        border: 0px;
+    }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 240px;
+        top: 60px;
     }
 }
 
 @media only screen and (min-width:800px) and (max-width:1200px) {
     header ul li {
         margin-left: 40px;
+    }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 180px;
+        top: 60px;
     }
 }
 
@@ -99,7 +144,14 @@ header button:hover {
     }
 
     header ul li {
-        margin-left: 30px;
+        margin-left: 25px;
+    }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 180px;
+        top: 60px;
     }
 }
 
@@ -112,8 +164,22 @@ header button:hover {
     }
 
     header ul li {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 20px;
+    }
+    
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 150px;
+        top: 60px;
+    }
+
+    header button {
+        font-size: 16px;
+        color: #ffffff;
+        background-color: black;
+        border: 0px;
     }
 }
 
@@ -127,7 +193,21 @@ header button:hover {
 
     header ul li {
         font-size: 15px;
-        margin-left: 20px;
+        margin-left: 18px;
+    }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 150px;
+        top: 60px;
+    }
+
+    header button {
+        font-size: 16px;
+        color: #ffffff;
+        background-color: black;
+        border: 0px;
     }
 }
 
@@ -156,10 +236,24 @@ header button:hover {
         color: #ffffff;
         margin-right: 20px;
     }
+
+    header span {
+        visibility: hidden;
+    }
 }
 
 
-@media only screen and (max-width:628px) {
+@media only screen and (max-width:728px) {
+    header {
+        height: 150px;
+    }
+    header span {
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width:640px) {
     header {
         height: 130px;
         display: flex;
@@ -181,172 +275,3 @@ header button:hover {
         margin-right: 20px;
     }
 }
-
-/* 
-
-@media only screen and (max-width:550px) {
-    header {
-        background-color: red;
-        height: 160px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header img {
-        width: 70px;
-        float: left;
-        margin-left: 20px;
-        margin-top: 14px;
-    }
-} */
-
-
-
-
-
-/* @media only screen and (max-width: 1400px) {
-    header ul li {
-        margin-left: 60px;
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
-    header ul li {
-        font-size: 18px;
-        margin-left: 50px;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    header ul li {
-        font-size: 18px;
-        margin-left: 40px;
-    }
-}
-
-@media only screen and (max-width: 1010px) {
-    header ul li {
-        margin-left: 35px;
-        font-size: 18px;
-        margin-top: 25px;
-    }
-
-    header img {
-        width: 50px;
-    }
-
-    header .checkoutIcon {
-        font-size: 25px;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-
-    header ul {
-        float: left;
-    }
-
-    header .itemsCounter {
-        visibility: hidden;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    header ul li {
-        margin-left: 25px;
-        font-size: 16px;
-        margin-top: 25px;
-    }
-
-    header img {
-        width: 50px;
-    }
-
-    header .checkoutIcon {
-        font-size: 25px;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-
-    header ul {
-        float: left;
-    }
-}
-
-@media only screen and (max-width:820px) {
-    header ul li {
-        margin-left: 25px;
-        font-size: 15px;
-        margin-top: 20px;
-    }
-
-    header img {
-        width: 35px;
-        margin-left: 45px;
-    }
-
-    header .checkoutIcon {
-        font-size: 20px;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-
-    header ul {
-        float: left;
-    }
-}
-
-@media only screen and (max-width:740px) {
-    header {
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    header img {
-        width: 45px;
-        margin-left: 10px;
-    }
-
-    header ul li {
-        margin-left: 15px;
-        font-size: 13px;
-        margin-top: 20px;
-    }
-
-    header .checkoutIcon {
-        font-size: 20px;
-        color: #ffffff;
-        margin-right: 45px;
-    }
-}
-
-
-@media only screen and (max-width:550px) {
-    header {
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header img {
-        width: 40px;
-        margin-left: 0px;
-    }
-
-    header ul li {
-        margin-left: 15px;
-        font-size: 10px;
-        margin-top: 20px;
-    }
-
-    header .checkoutIcon {
-        font-size: 18px;
-        color: #ffffff;
-        margin-right: 45px;
-    }
-} */
