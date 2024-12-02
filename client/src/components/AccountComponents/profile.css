@@ -35,3 +35,101 @@
 .profileBox button {
     width: 490px;
 }
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    .profileBox {
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px) {
+    .profileBox {
+        margin-left: -90px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:950px) {
+    .profile {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .profileBox {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 500px;
+        margin-left: -90px;
+    }
+
+    .profileBox input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .profileBox button {
+        width: 390px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:826px) {
+    .profile {
+        height: 560px;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-left: 10px;
+    }
+
+    .profileBox {
+        margin: 0 auto;
+        width: 500px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 500px;
+    }
+
+    .profileBox input {
+        border: 1px solid gray;
+        width: 440px;
+        margin-bottom: 30px;
+    }
+
+    .profileBox button {
+        width: 440px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:610px) {
+    .profile {
+        height: 560px;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-left: 20px;
+    }
+
+    .profileBox {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 500px;
+    }
+
+    .profileBox input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .profileBox button {
+        width: 390px;
+    }
+}

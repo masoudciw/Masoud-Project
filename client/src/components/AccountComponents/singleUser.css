@@ -36,3 +36,103 @@
     width: 490px;
     margin-bottom: 10px;
 }
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    .userBox {
+        margin-left: -40px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px) {
+    .userBox {
+        margin-left: -90px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:950px) {
+    .userBox {
+        margin: 0 auto;
+        padding-top: 30px;
+        height: 500px;
+    }
+
+    .userContainer {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 550px;
+        margin-left: -90px;
+    }
+
+    .userContainer input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .userContainer button {
+        width: 390px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:827px) {
+    .userBox {
+        height: 605px;
+        margin-left: 20px;
+    }
+
+    .userContainer {
+        margin: 0 auto;
+        width: 500px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 550px;
+    }
+
+    .userContainer input {
+        border: 1px solid gray;
+        width: 440px;
+        margin-bottom: 30px;
+    }
+
+    .userContainer button {
+        width: 440px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:610px) {
+    .userBox {
+        height: 605px;
+        margin-left: 20px;
+    }
+
+    .userContainer {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    .userContainer input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+
+    .userContainer button {
+        width: 390px;
+    }
+
+}

@@ -52,3 +52,102 @@
     color: black;
     transition: .3s;
 }
+
+@media only screen and (min-width:1000px) and (max-width:1526px) {
+    .posts {
+        width: 900px;
+    }
+
+    .posts .viewButton {
+        border: 2px solid black;
+        background-color: rgb(231, 231, 231);
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        right: -60px;
+        top: 10px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1336px) {
+    .posts {
+        width: 800px;
+    }
+    .posts span {
+        color: black;
+        font-weight: bold;
+        color: 16px;
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+    }
+    
+    .posts p {
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .posts .viewButton {
+        border: 2px solid black;
+        background-color: rgb(231, 231, 231);
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        right: -70px;
+        top: 10px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1236px) {
+    .posts {
+        width: 500px;
+    }
+    .posts span {
+        color: black;
+        font-weight: bold;
+        color: 16px;
+        margin-right: 10px;
+        border-bottom: 1px solid black;
+        font-size: 15px;
+    }
+    
+    .posts p {
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .posts .descriptionBox {
+        width: 50px;
+    }
+    .posts .postAuthorBox {
+        width: 50px;
+    }
+
+    .posts .viewButton {
+        border: 2px solid black;
+        background-color: rgb(231, 231, 231);
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        right: 190px;
+        top: 140px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:610px) {
+
+}

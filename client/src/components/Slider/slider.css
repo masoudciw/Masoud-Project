@@ -20,7 +20,7 @@
     margin-bottom: 70px;
 }
 
-.slider ul li .linkTag{
+.slider ul li .linkTag {
     color: black;
     text-decoration: none;
     border: 2px solid black;
@@ -30,8 +30,34 @@
     font-weight: bold;
 }
 
-.slider ul li .linkTag:hover{
+.slider ul li .linkTag:hover {
     background-color: rgb(216, 216, 216);
     transition: .3s;
     border: 2px solid rgb(89, 88, 88);
+}
+
+
+@media only screen and (max-width:827px) {
+    .slider {
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        height: 190px;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .sliderBox {
+        width: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 180px;
+    }
+    .slider ul li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
 }

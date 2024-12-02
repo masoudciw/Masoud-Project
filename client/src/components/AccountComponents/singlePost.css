@@ -48,3 +48,132 @@
     width: 490px;
     margin-bottom: 10px;
 }
+
+@media only screen and (min-width:800px) and (max-width:1100px) {
+    .singlePost {
+        margin-left: -40px;
+        height: 920px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px) {
+    .singlePost {
+        margin-left: -90px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:950px) {
+    .singlePost {
+        margin: 0 auto;
+        padding-top: 30px;
+        height: 950px;
+    }
+
+    .singlePostContainer {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 890px;
+        margin-left: -90px;
+    }
+
+    .singlePostContainer input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer textarea {
+        border: 1px solid gray;
+        width: 390px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer button {
+        width: 390px;
+    }
+
+    .singlePostContainer span {
+        font-size: 12px;
+        color: rgba(128, 128, 128, 0.821);
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:827px) {
+    .singlePost {
+        height: 950px;
+        margin-left: 20px;
+    }
+
+    .singlePostContainer {
+        margin: 0 auto;
+        width: 500px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 890px;
+    }
+
+    .singlePostContainer input {
+        border: 1px solid gray;
+        width: 440px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer textarea {
+        border: 1px solid gray;
+        width: 440px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer button {
+        width: 440px;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:610px) {
+    .singlePost {
+        height: 950px;
+        margin-left: 20px;
+    }
+
+    .singlePostContainer {
+        margin: 0 auto;
+        width: 450px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 890px;
+    }
+
+    .singlePostContainer input {
+        border: 1px solid gray;
+        width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer textarea {
+        border: 1px solid gray;
+        width: 390px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .singlePostContainer button {
+        width: 390px;
+    }
+
+    .singlePostContainer span {
+        font-size: 12px;
+        color: rgba(128, 128, 128, 0.821);
+        margin-left: 20px;
+    }
+}
