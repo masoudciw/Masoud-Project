@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { QUERY_SINGLE_USER } from '../../utils/queries';
+import { GET_USERS } from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 import { DELETE_USER } from '../../utils/mutations';
 import { UPDATE_USER_TYPE } from '../../utils/mutations';
@@ -15,11 +16,16 @@ const SingleUser = () => {
     const { userId, userType } = useParams();
     useTitle(`Masoud | User: ${userId} `);
     const navigate = useNavigate();
-    const [deleteUser, { error }] = useMutation(DELETE_USER, { variables: { userId: userId } });
+    const [deleteUser, { error }] = useMutation(DELETE_USER, {
+        refetchQueries: [
+            GET_USERS,
+            'users'
+        ]
+    }, { variables: { userId: userId } });
     const [updateUserType, { status }] = useMutation(UPDATE_USER_TYPE, { variables: { userId: userId, userType: userType } });
 
     const handleDeleteUser = async (userId) => {
-        navigate("/account");
+        navigate("/account/users");
         alert('User Deleted Successfully');
         try {
             const { data } = await deleteUser({

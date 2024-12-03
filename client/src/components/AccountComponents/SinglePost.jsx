@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { QUERY_POSTS } from '../../utils/queries';
 import { QUERY_SINGLE_POST } from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 import { DELETE_POST } from '../../utils/mutations';
@@ -22,11 +23,16 @@ const SinglePost = () => {
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
     const [image, setImage] = useState('');
-    const [deletePost, { error }] = useMutation(DELETE_POST, { variables: { postId: postId } });
+    const [deletePost, { error }] = useMutation(DELETE_POST, {
+        refetchQueries: [
+            QUERY_POSTS,
+            'posts'
+        ]
+    }, { variables: { postId: postId } });
     const [updatePost, { status }] = useMutation(UPDATE_POST, { variables: { postId: postId, title: title, price: price, description: description, category: category, image: image, postAuthor: Auth.getProfile().data._id } });
 
     const handleDeletePost = async (postId) => {
-        navigate("/account");
+        navigate("/account/posts");
         alert('Post Deleted Successfully');
         try {
             const { data } = await deletePost({

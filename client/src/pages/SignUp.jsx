@@ -5,13 +5,14 @@ import useTitle from "../hooks/useTitle";
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
+import Loader from '../../src/assets/loader.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './signUp.css';
 
 const SignUp = () => {
 
     useTitle("Masoud | Sign Up");
-    
+
     // const [secretKey, setsecretKey] = useState('');
     const [formState, setFormState] = useState({
         username: '',
@@ -32,26 +33,26 @@ const SignUp = () => {
 
     const handleFormSubmit = async (event) => {
         // if (formState.userType === 'ADMIN' && secretKey != 'MASOUD') {
-            // event.preventDefault();
-            // alert('Invalid Secret Key! Please Try Again.')
+        // event.preventDefault();
+        // alert('Invalid Secret Key! Please Try Again.')
         // } else if (formState.userType === 'ADMIN' && secretKey === 'MASOUD') {
-            event.preventDefault();
-            try {
-                const { data } = await addUser({
-                    variables: { ...formState },
-                });
-
-                Auth.login(data.addUser.token);
-            } catch (e) {
-                console.error(e);
-            }
-
-            // clear form values
-            setFormState({
-                email: '',
-                password: '',
-                userType: ''
+        event.preventDefault();
+        try {
+            const { data } = await addUser({
+                variables: { ...formState },
             });
+
+            Auth.login(data.addUser.token);
+        } catch (e) {
+            console.error(e);
+        }
+
+        // clear form values
+        setFormState({
+            email: '',
+            password: '',
+            userType: ''
+        });
 
 
         // } else if (formState.userType === 'USER') {
@@ -79,10 +80,12 @@ const SignUp = () => {
         <>
             <div className='signUpBox'>
                 {data ? (
-                    <p>
-                        Success! You may now head{' '}
-                        <Link to="/">back to the homepage.</Link>
-                    </p>
+                    <div className='signUpSuccessMessage'>
+                        <img src={Loader} alt="Loader Image" />
+                        <p>
+                            SignUp Successfully!
+                        </p>
+                    </div>
                 ) : (
                     <form className='formSignUpBox' onSubmit={handleFormSubmit}>
                         <h6>Create New Account</h6>

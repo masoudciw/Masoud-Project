@@ -6,6 +6,20 @@
     padding-top: 100px;
 }
 
+.signUpBox .signUpSuccessMessage{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signUpBox .signUpSuccessMessage img{
+    margin-bottom: 30px;
+}
+
+.signUpBox .signUpSuccessMessage p{
+    color: #ffffff;
+    font-size: 30px;
+}
+
 .formSignUpBox {
     margin: 0 auto;
     width: 550px;
