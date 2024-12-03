@@ -22,7 +22,7 @@ const Posts = () => {
                     <div className='postInformationBox'>
                         <div key={post._id}>
                             <ul className='postLists'>
-                                <li><span>Post Id: </span><p>{post._id}</p></li>
+                                <li><span>Post ID: </span><p>{post._id}</p></li>
                                 <li><span>Brand: </span><p>{post.title}</p></li>
                                 <li><span>Price: </span><p>${post.price}</p></li>
                                 <li><span>Model: </span><p>{post.description}</p></li>

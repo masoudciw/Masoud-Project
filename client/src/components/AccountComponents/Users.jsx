@@ -17,29 +17,23 @@ const Users = () => {
 
     return (
         <>
-            {data.users.map((user) => (
-                <div className='users'>
-                    <div key={user._id}>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td><span>Username:</span></td>
-                                    <td><span>Email:</span></td>
-                                    <td><span>User Type:</span></td>
-                                    <td><Link to={user._id} className='viewButton'>Delete / Edit</Link></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><p>{user.username}</p></td>
-                                    <td><p>{user.email}</p></td>
-                                    <td><p>{user.userType}</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div className='users'>
+                {data.users.map((user) => (
+                    <div className="usersInformationBox">
+                        <div key={user._id}>
+                            <div className='usersList'>
+                                <ul>
+                                    <li><span>User ID: </span><p>{user._id}</p></li>
+                                    <li><span>Username: </span><p>{user.username}</p></li>
+                                    <li><span>Email: </span><p>{user.email}</p></li>
+                                    <li><span>User Type: </span><p>{user.userType}</p></li>
+                                    <li><Link to={user._id} className='viewButton'>Delete / Edit</Link></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </>
     );
 };
