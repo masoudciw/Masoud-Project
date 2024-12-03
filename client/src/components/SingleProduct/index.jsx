@@ -6,6 +6,7 @@ import useTitle from '../../hooks/useTitle';
 import { Link } from 'react-router-dom';
 import CommentList from '../CommentComponents/CommentList';
 import CommentForm from '../CommentComponents/CommentForm';
+import Auth from '../../utils/auth';
 import './index.css';
 
 const SingleProduct = () => {
@@ -27,13 +28,14 @@ const SingleProduct = () => {
             <div className='product'>
                 <div className='productImage'><img src={data.post.image} /></div>
                 <div className='productInfo'>
-                    <p>Model: <span>{data.post.title}</span></p>
+                    {Auth.loggedIn() && Auth.getProfile().data.userType === 'ADMIN' ? <p>Post ID: <span>{data.post._id}</span></p> : null}
+                    <p>Brand: <span>{data.post.title}</span></p>
                     <p>Price: <span>${data.post.price}</span></p>
-                    <p>Description: <span>{data.post.description}</span></p>
+                    <p>Model: <span>{data.post.description}</span></p>
                     <p>Category: <span>{data.post.category}</span></p>
                     <p>Posted At: <span>{data.post.createdAt}</span></p>
                     <div class="col-sm-10">
-                        <Link to='/products' class="btn btn-danger">Back To Shop</Link>
+                    {Auth.loggedIn() && Auth.getProfile().data.userType === 'ADMIN' ? null : <Link to='/products' class="btn btn-danger">Back To Shop</Link>}
                     </div>
                 </div>
             </div>

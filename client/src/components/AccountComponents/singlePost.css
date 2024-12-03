@@ -1,5 +1,5 @@
 .singlePost {
-    height: 920px;
+    height: 800px;
     margin: 0 auto;
     padding-top: 5px;
 }
@@ -11,7 +11,7 @@
     padding: 30px;
     border: 0px 2px 2px 0px solid gray;
     border-radius: 15px 15px 15px 15px;
-    height: 890px;
+    height: 780px;
 }
 
 .singlePostContainer h6 {
@@ -32,12 +32,12 @@
     margin-bottom: 30px;
 }
 
-.singlePostContainer textarea {
+/* .singlePostContainer textarea {
     border: 1px solid gray;
     width: 490px;
     height: 150px;
     margin-bottom: 30px;
-}
+} */
 
 .singlePostContainer select {
     border: 1px solid gray;
@@ -52,7 +52,7 @@
 @media only screen and (min-width:800px) and (max-width:1100px) {
     .singlePost {
         margin-left: -40px;
-        height: 920px;
+        height: 800px;
     }
 }
 
@@ -66,7 +66,7 @@
     .singlePost {
         margin: 0 auto;
         padding-top: 30px;
-        height: 950px;
+        height: 820px;
     }
 
     .singlePostContainer {
@@ -76,7 +76,7 @@
         padding: 30px;
         border: 0px 2px 2px 0px solid gray;
         border-radius: 15px 15px 15px 15px;
-        height: 890px;
+        height: 780px;
         margin-left: -90px;
     }
 
@@ -86,12 +86,12 @@
         margin-bottom: 30px;
     }
 
-    .singlePostContainer textarea {
+    /* .singlePostContainer textarea {
         border: 1px solid gray;
         width: 390px;
         height: 150px;
         margin-bottom: 30px;
-    }
+    } */
 
     .singlePostContainer button {
         width: 390px;
@@ -106,7 +106,7 @@
 
 @media only screen and (min-width:400px) and (max-width:827px) {
     .singlePost {
-        height: 950px;
+        height: 820px;
         margin-left: 20px;
     }
 
@@ -117,7 +117,7 @@
         padding: 30px;
         border: 0px 2px 2px 0px solid gray;
         border-radius: 15px 15px 15px 15px;
-        height: 890px;
+        height: 780px;
     }
 
     .singlePostContainer input {
@@ -126,12 +126,12 @@
         margin-bottom: 30px;
     }
 
-    .singlePostContainer textarea {
+    /* .singlePostContainer textarea {
         border: 1px solid gray;
         width: 440px;
         height: 150px;
         margin-bottom: 30px;
-    }
+    } */
 
     .singlePostContainer button {
         width: 440px;
@@ -140,7 +140,7 @@
 
 @media only screen and (min-width:200px) and (max-width:610px) {
     .singlePost {
-        height: 950px;
+        height: 820px;
         margin-left: 20px;
     }
 
@@ -151,7 +151,7 @@
         padding: 30px;
         border: 0px 2px 2px 0px solid gray;
         border-radius: 15px 15px 15px 15px;
-        height: 890px;
+        height: 780px;
     }
 
     .singlePostContainer input {
@@ -160,12 +160,12 @@
         margin-bottom: 30px;
     }
 
-    .singlePostContainer textarea {
+    /* .singlePostContainer textarea {
         border: 1px solid gray;
         width: 390px;
         height: 150px;
         margin-bottom: 30px;
-    }
+    } */
 
     .singlePostContainer button {
         width: 390px;

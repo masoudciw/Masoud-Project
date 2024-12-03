@@ -56,7 +56,7 @@ const Post = () => {
             <div className='post'>
                 <form className='postBox' encType='multipart/form-data'>
                     <div class="form-group row">
-                        <label for="title">Title</label>
+                        <label for="title">Brand</label>
                         <div class="col-sm-10">
                             <input type="text" name='title' value={title} onChange={(e) => { setTitle(e.target.value) }} class="form-control" id="title" placeholder='Product Name' />
                         </div>
@@ -67,9 +67,9 @@ const Post = () => {
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="description">Description</label>
+                            <label for="description">Model</label>
                             <div class="col-sm-10">
-                                <textarea type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="description" placeholder="Description Of Product" />
+                                <input type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="description" placeholder="Model Of Product" />
                             </div>
                         </div>
                         <div class="form-group row">

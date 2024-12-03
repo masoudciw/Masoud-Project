@@ -6,6 +6,20 @@
     padding-top: 100px;
 }
 
+.loginBox .loginSuccessMessage{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loginBox .loginSuccessMessage img{
+    margin-bottom: 30px;
+}
+
+.loginBox .loginSuccessMessage p{
+    color: #ffffff;
+    font-size: 30px;
+}
+
 .formLoginBox {
     margin: 0 auto;
     width: 550px;

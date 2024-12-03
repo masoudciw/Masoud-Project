@@ -8,6 +8,7 @@ import Auth from '../utils/auth';
 import { QUERY_SECRET_CODES } from '../utils/queries';
 import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
+import Loader from '../../src/assets/loader.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css';
 
@@ -98,7 +99,7 @@ const Login = () => {
                 // userType: ''
             });
 
-        }else{
+        } else {
             event.preventDefault();
             formState.userType = 'USER';
             console.log(formState);
@@ -116,7 +117,7 @@ const Login = () => {
                 email: '',
                 password: '',
                 // userType: ''
-            }); 
+            });
         }
         // } else {
         //     event.preventDefault();
@@ -130,10 +131,12 @@ const Login = () => {
         <>
             <div className='loginBox'>
                 {data ? (
-                    <p>
-                        Success! You may now head{' '}
-                        <Link to='/'>back to the homepage.</Link>
-                    </p>
+                    <div className='loginSuccessMessage'>
+                        <img src={Loader} alt="Loader Image" />
+                        <p>
+                            Login To Your Account!
+                        </p>
+                    </div>
                 ) : (
                     <form className='formLoginBox' onSubmit={handleFormSubmit}>
                         <h6>Sign in or create a new account in order to save items or add to your wish list.</h6>

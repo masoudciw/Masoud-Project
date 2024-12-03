@@ -67,7 +67,7 @@ const SinglePost = () => {
                         <div class="col-sm-10">
                             <input type="text" name='postId' disabled class="form-control" id="inputPostId" placeholder={postId} />
                         </div>
-                        <label for="inputTitle">Title</label>
+                        <label for="inputTitle">Brand</label>
                         <div class="col-sm-10">
                             <input type="text" value={title} onChange={(e) => { setTitle(e.target.value) }} name='title' class="form-control" id="inputTitle" placeholder={data.post.title} />
                         </div>
@@ -78,9 +78,9 @@ const SinglePost = () => {
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputDescription">Description</label>
+                            <label for="inputDescription">Model</label>
                             <div class="col-sm-10">
-                                <textarea type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="inputDescription" placeholder={data.post.description} />
+                                <input type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} name='description' class="form-control" id="inputDescription" placeholder={data.post.description} />
                             </div>
                         </div>
                         <div class="form-group row">
