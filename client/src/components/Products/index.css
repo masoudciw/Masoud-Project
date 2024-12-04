@@ -123,6 +123,22 @@
     transition: .3s;
 }
 
+.noProductSection {
+    text-align: center;
+}
+
+.noProductSection img {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.noProductSection p {
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+    margin: 30px auto;
+}
+
 @media only screen and (min-width:1200px) and (max-width:1500px) {
     .products {
         margin: 100px auto;

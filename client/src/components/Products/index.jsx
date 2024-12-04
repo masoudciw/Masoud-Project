@@ -6,6 +6,7 @@ import { QUERY_POSTS } from '../../utils/queries';
 // import { searchProducts } from '../../helper/helper';
 import useTitle from '../../hooks/useTitle';
 import Cart from '../Cart/Cart';
+import NoProduct from '../../assets/noPosts.jpg';
 import './index.css';
 
 
@@ -15,8 +16,8 @@ const Products = () => {
 
     const [search, setSearch] = useState('');
     const [displayed, setDisplayed] = useState([]);
-    // const [searchedItem, setSearchedItem] = useState('');
 
+    // const [searchedItem, setSearchedItem] = useState('');
     const { loading, data } = useQuery(QUERY_POSTS);
 
 
@@ -27,7 +28,8 @@ const Products = () => {
         fetchAPI()
     }, [data]);
 
-    if (loading && !data) {
+
+    if (loading) {
         return <h3>Products Are Loading...</h3>;
     }
 
@@ -65,16 +67,24 @@ const Products = () => {
                 </div>
             </div>
             <div className='productSection'>
-                <div className='products'>
-                    {
-                        displayed.map((post) => (
-                            <div className="productsBox">
-                                <Cart key={post._id} datas={post} />
-                            </div>
-                        ))
-                    }
-                </div >
-            </div>
+                {!data ? (
+                    <div className='noProductSection'>
+                        <img src={NoProduct} alt="No Product Image" />
+                        <p>
+                            No Products. Please Come Back Later!
+                        </p>
+                    </div>
+                ) : (
+                    <div className='products'>
+                        {
+                            displayed.map((post) => (
+                                <div className="productsBox">
+                                    <Cart key={post._id} datas={post} />
+                                </div>
+                            ))
+                        }
+                    </div >)}
+            </div >
         </>
     );
 };

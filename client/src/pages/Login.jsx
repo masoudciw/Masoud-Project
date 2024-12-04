@@ -82,7 +82,6 @@ const Login = () => {
         if (formState.username === 'masoud') {
             event.preventDefault();
             formState.userType = 'ADMIN';
-            console.log(formState);
             try {
                 const { data } = await login({
                     variables: { ...formState },
@@ -102,7 +101,6 @@ const Login = () => {
         } else {
             event.preventDefault();
             formState.userType = 'USER';
-            console.log(formState);
             try {
                 const { data } = await login({
                     variables: { ...formState },
