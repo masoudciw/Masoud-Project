@@ -16,27 +16,29 @@ const Products = () => {
 
     const [search, setSearch] = useState('');
     const [displayed, setDisplayed] = useState([]);
-
-    // const [searchedItem, setSearchedItem] = useState('');
     const { loading, data } = useQuery(QUERY_POSTS);
 
-
     useEffect(() => {
-        const fetchAPI = async () => {
-            await setDisplayed(data.posts);
-        }
-        fetchAPI()
+        (async () => {
+            try {
+                await setDisplayed(data.posts);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        })();
     }, [data]);
-
 
     if (loading) {
         return <h3>Products Are Loading...</h3>;
     }
 
+
     const searchHandler = () => {
         const searchedData = data.posts.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
         setDisplayed(searchedData);
     };
+
+
 
     const categoryHandler = (event) => {
         const { tagName } = event.target;
