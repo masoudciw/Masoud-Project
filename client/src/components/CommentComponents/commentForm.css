@@ -18,7 +18,10 @@
     .commentFormBox {
         width: 1000px;
         margin: 30px auto;
-
+    }
+    .commentFormWriteBox {
+        width: 1000px;
+        margin: 30px auto;
     }
 }
 
@@ -32,6 +35,11 @@
         width: 800px;
         margin-bottom: 20px;
     }
+
+    .commentFormWriteBox {
+        width: 800px;
+        margin: 30px auto;
+    }
 }
 
 @media only screen and (min-width:800px) and (max-width:1100px) {
@@ -43,7 +51,13 @@
         width: 600px;
         margin-bottom: 20px;
     }
+
+    .commentFormWriteBox {
+        width: 600px;
+        margin: 30px auto;
+    }
 }
+
 
 @media only screen and (min-width:600px) and (max-width:900px) {
     .commentFormBox {
@@ -53,6 +67,11 @@
     .commentFormWriteBox textarea {
         width: 400px;
         margin-bottom: 20px;
+    }
+
+    .commentFormWriteBox {
+        width: 400px;
+        margin: 30px auto;
     }
 }
 
@@ -64,5 +83,9 @@
     .commentFormWriteBox textarea {
         width: 350px;
         margin-bottom: 20px;
+    }
+    .commentFormWriteBox {
+        width: 400px;
+        margin: 30px auto;
     }
 }

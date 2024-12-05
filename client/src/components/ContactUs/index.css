@@ -140,7 +140,7 @@
     }
 
     .contact .formBox {
-        width: 550px;
+        width:450px;
         background-color: #ffffffe5;
         padding: 30px;
         border: 0px 0px 2px 2px solid gray;
@@ -152,7 +152,7 @@
         padding: 30px;
         border: 2px 2px 2px 2px solid gray;
         border-radius: 15px 15px 0px 0px;
-        width: 550px;
+        width: 450px;
     }
 }
 
@@ -167,7 +167,7 @@
     }
 
     .contact .formBox {
-        width: 500px;
+        width: 450px;
         background-color: #ffffffe5;
         padding: 30px;
         border: 0px 0px 2px 2px solid gray;
@@ -179,6 +179,6 @@
         padding: 30px;
         border: 2px 2px 2px 2px solid gray;
         border-radius: 15px 15px 0px 0px;
-        width: 500px;
+        width: 450px;
     }
 }

@@ -72,3 +72,17 @@
     opacity: .8;
     transition: 1.5s;
 }
+
+@media only screen and (max-width:600px) {
+    .buyButton {
+        margin-right: 50px;
+        opacity: 1;
+        transition: .5s;
+    }
+
+    .sellButton {
+        margin-left: 50px;
+        opacity: 1;
+        transition: .5s;
+    }
+}

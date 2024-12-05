@@ -250,4 +250,9 @@
         font-size: 18px;
         margin-top: -13px;
     }
+
+    .emptyCartBox img{
+width: 300px;
+    }
 }
+
