@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     width: 1400px;
     margin: 0 auto;
 }
@@ -10,7 +10,7 @@
     background-color: #ffffffe5;
 }
 
-.container h1{
+.container h1 {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 80px;
@@ -18,35 +18,35 @@
     animation: slow2 1s ease;
 }
 
-.container h2{
+.container h2 {
     animation: slow2 1.5s ease;
     color: #252525;
 }
 
-.container p{
+.container p {
     margin-bottom: 80px;
     animation: slow2 2s ease;
     color: #252525;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: space-between;
 }
 
-.links a:first-child{
+.links a:first-child {
     animation: slow2 2.5s ease;
 }
 
-.link2{
+.link2 {
     animation: slow2 3s ease;
 }
 
-.links a:last-child{
+.links a:last-child {
     animation: slow2 3.5s ease;
 }
 
-.links a{
+.links a {
     font-size: 1.3rem;
     color: #03408F;
     text-decoration: none;
@@ -56,65 +56,72 @@
     margin-bottom: 60px;
 }
 
-.links a:hover{
-    color:  rgb(144, 139, 221);
+.links a:hover {
+    color: rgb(144, 139, 221);
     transition: all .4s;
 }
 
 @keyframes slow2 {
-    0%{
+    0% {
         opacity: 0;
     }
-    50%{
-        opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
 
-  @media (max-width: 1400px) {
-    .wrapper{
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
         width: 1300px;
     }
 
-  }
+}
 
-  @media (max-width: 1320px) {
-    .wrapper{
+@media (max-width: 1320px) {
+    .wrapper {
         width: 1100px;
     }
-  }
+}
 
-  @media (max-width: 1120px) {
-    .wrapper{
+@media (max-width: 1120px) {
+    .wrapper {
         width: 900px;
     }
-    
+
     .container {
         height: fit-content;
     }
-  }
+}
 
-  @media (max-width: 920px) {
-    .wrapper{
+@media (max-width: 920px) {
+    .wrapper {
         width: 700px;
     }
-  }
+}
 
-  @media (max-width: 720px) {
-    .wrapper{
+@media (max-width: 720px) {
+    .wrapper {
         width: 450px;
     }
 
     .container {
         height: fit-content;
     }
-  }
+}
 
-  @media (max-width: 500px) {
-    .wrapper{
+@media (max-width: 500px) {
+    .wrapper {
         width: 450px;
-        margin-left: 21px;
     }
-  }
+}
+
+@media (max-width: 300px) {
+    .wrapper {
+        width: 250px;
+    }
+}
