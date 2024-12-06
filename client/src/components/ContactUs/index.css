@@ -45,6 +45,7 @@
 }
 
 .contact .formBox input {
+    width: 490px;
     border: 1px solid gray;
 }
 
@@ -154,6 +155,11 @@
         border-radius: 15px 15px 0px 0px;
         width: 450px;
     }
+
+    .contact .formBox input {
+        width: 390px;
+        border: 1px solid gray;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -181,6 +187,10 @@
         border-radius: 15px 15px 0px 0px;
         width: 450px;
     }
+    .contact .formBox input {
+        width: 390px;
+        border: 1px solid gray;
+    }
 }
 
 @media only screen and (max-width:435px) {
@@ -207,5 +217,10 @@
         border: 2px 2px 2px 2px solid gray;
         border-radius: 15px 15px 0px 0px;
         width: 380px;
+    }
+
+    .contact .formBox input {
+        width: 320px;
+        border: 1px solid gray;
     }
 }
