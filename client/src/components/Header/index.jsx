@@ -25,11 +25,13 @@ const Header = () => {
                         <Link to='/contactus'><li>CONTACT US</li></Link>
                         {Auth.loggedIn() ? (
                             <>
-                                <span>Hey there, {Auth.getProfile().data.username}!</span>
-                                <Link to='/account'><li>ACCOUNT</li></Link>
-                                <li><button className='logoutButton' onClick={logout}>
-                                    LOGOUT
-                                </button></li>
+                                <div className='accountBox'>
+                                    <span>Hey there, {Auth.getProfile().data.username}!</span>
+                                    <Link to='/account'><li>ACCOUNT</li></Link>
+                                    <li><button className='logoutButton' onClick={logout}>
+                                        LOGOUT
+                                    </button></li>
+                                </div>
                             </>
                         ) : (
                             <>
@@ -37,8 +39,10 @@ const Header = () => {
                                 <Link className='signUpButton' to="/signup"><li>SIGN UP</li></Link>
                             </>
                         )}
-                        <Link to='/checkout'><li><PiShoppingCartSimpleBold className='checkoutIcon' /></li></Link>
-                        {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
+                        <div className='itemsCounterBox'>
+                            <Link to='/checkout'><li><PiShoppingCartSimpleBold className='checkoutIcon' /></li></Link>
+                            {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
+                        </div>
                     </ul>
                 </div>
             </header >

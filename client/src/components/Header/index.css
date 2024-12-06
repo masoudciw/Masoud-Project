@@ -23,11 +23,16 @@ header ul li {
     color: #ffffff;
 }
 
+header .accountBox {
+    display: inline-block;
+    position: relative;
+}
+
 header span {
     position: absolute;
     color: rgb(182, 182, 182);
-    right: 290px;
-    top: 60px;
+    right: 130px;
+    top: 50px;
 }
 
 header .checkoutIcon {
@@ -47,13 +52,18 @@ header ul li:hover {
     cursor: pointer;
 }
 
+header .itemsCounterBox {
+    display: inline;
+    position: relative;
+}
+
 header .itemsCounter {
     color: red;
     font-weight: bold;
     padding: 3px;
     position: absolute;
-    right: 40px;
-    top: 10px;
+    right: 0px;
+    top: -30px;
     font-size: 20px;
 }
 
@@ -70,7 +80,7 @@ header button:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width:1167px) {
+@media only screen and (max-width:1201px) {
     header .headerBox {
         text-align: center;
         height: 120px;
@@ -124,6 +134,14 @@ header button:hover {
         color: #ffffff;
         margin-right: 0px;
     }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right: 100px;
+        top: 50px;
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width:888px) {
@@ -152,9 +170,16 @@ header button:hover {
         color: #ffffff;
         margin-right: 0px;
     }
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right:70px;
+        top: 50px;
+        font-size: 15px;
+    }
 }
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:765px) {
     header .headerBox {
         text-align: center;
         height: 120px;
@@ -180,9 +205,17 @@ header button:hover {
         color: #ffffff;
         margin-right: 0px;
     }
+
+    header span {
+        position: absolute;
+        color: rgb(182, 182, 182);
+        right:55px;
+        top: 50px;
+        font-size: 15px;
+    }
 }
 
-@media only screen and (max-width:639px) {
+@media only screen and (max-width:665px) {
     header {
         background-color: black;
         height: 480px;
@@ -217,6 +250,13 @@ header button:hover {
         font-size: 25px;
         color: #ffffff;
         margin-right: 0px;
+    }
+
+    header .itemsCounter {
+        visibility: hidden;
+    }
+    header span {
+        visibility: hidden;
     }
 }
 
@@ -296,4 +336,3 @@ header button:hover {
         margin-right: 0px;
     }
 }
-
