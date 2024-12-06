@@ -1,31 +1,27 @@
 header {
     background-color: black;
-    height: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 125px;
+}
+
+header .headerBox {
+    text-align: center;
+    height: 120px;
 }
 
 header img {
     width: 70px;
-    float: left;
-    margin-left: 50px;
-    margin-top: 14px;
-}
-
-header ul {
-    float: right;
+    margin-left: -100px;
+    margin-right: 30px;
 }
 
 header ul li {
     display: inline-block;
     list-style: none;
     margin-left: 75px;
-    margin-top: 35px;
+    margin-top: 26px;
     font-size: 20px;
     color: #ffffff;
 }
-
 
 header span {
     position: absolute;
@@ -37,12 +33,12 @@ header span {
 header .checkoutIcon {
     font-size: 35px;
     color: #ffffff;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 
 
 header .signUpButton {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 header ul li:hover {
@@ -74,257 +70,230 @@ header button:hover {
     cursor: pointer;
 }
 
-@media only screen and (min-width:1200px) and (max-width:1400px) {
-    header ul li {
-        margin-left: 60px;
+@media only screen and (max-width:1167px) {
+    header .headerBox {
+        text-align: center;
+        height: 120px;
     }
 
-    header .logoutButton {
+    header img {
+        width: 70px;
+        margin-left: -100px;
+        margin-right: 30px;
+    }
+
+    header ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 55px;
+        margin-top: 26px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    header .checkoutIcon {
+        font-size: 35px;
+        color: #ffffff;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:1067px) {
+    header .headerBox {
+        text-align: center;
+        height: 120px;
+    }
+
+    header img {
+        width: 70px;
+        margin-left: -80px;
         margin-right: 0px;
     }
 
-    header button {
+    header ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 35px;
+        margin-top: 26px;
         font-size: 20px;
         color: #ffffff;
-        background-color: black;
-        border: 0px;
     }
 
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 260px;
-        top: 60px;
-    }
-}
-
-@media only screen and (min-width:1000px) and (max-width:1300px) {
-    header ul li {
-        margin-left: 60px;
-    }
-
-    header .logoutButton {
-        margin-right: -10px;
-    }
-
-    header button {
-        font-size: 20px;
+    header .checkoutIcon {
+        font-size: 35px;
         color: #ffffff;
-        background-color: black;
-        border: 0px;
-    }
-
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 240px;
-        top: 60px;
+        margin-right: 0px;
     }
 }
 
-@media only screen and (min-width:800px) and (max-width:1200px) {
-    header ul li {
-        margin-left: 40px;
+@media only screen and (max-width:888px) {
+    header .headerBox {
+        text-align: center;
+        height: 120px;
     }
 
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 180px;
-        top: 60px;
-    }
-}
-
-@media only screen and (min-width:800px) and (max-width:1200px) {
-    header {
-        height: 100px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    header img {
+        width: 70px;
+        margin-left: -60px;
+        margin-right: 0px;
     }
 
     header ul li {
+        display: inline-block;
+        list-style: none;
         margin-left: 25px;
-    }
-
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 180px;
-        top: 60px;
-    }
-}
-
-@media only screen and (min-width:600px) and (max-width:984px) {
-    header {
-        height: 100px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header ul li {
-        font-size: 16px;
-        margin-left: 20px;
-    }
-    
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 150px;
-        top: 60px;
-    }
-
-    header button {
-        font-size: 16px;
+        margin-top: 26px;
+        font-size: 18px;
         color: #ffffff;
-        background-color: black;
-        border: 0px;
+    }
+
+    header .checkoutIcon {
+        font-size: 35px;
+        color: #ffffff;
+        margin-right: 0px;
     }
 }
 
-@media only screen and (min-width:400px) and (max-width:863.5px) {
-    header {
-        height: 100px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+@media only screen and (max-width:760px) {
+    header .headerBox {
+        text-align: center;
+        height: 120px;
+    }
+
+    header img {
+        width: 70px;
+        margin-left: -50px;
+        margin-right: 0px;
     }
 
     header ul li {
-        font-size: 15px;
+        display: inline-block;
+        list-style: none;
         margin-left: 18px;
-    }
-
-    header span {
-        position: absolute;
-        color: rgb(182, 182, 182);
-        right: 150px;
-        top: 60px;
-    }
-
-    header button {
+        margin-top: 26px;
         font-size: 16px;
         color: #ffffff;
+    }
+
+    header .checkoutIcon {
+        font-size: 25px;
+        color: #ffffff;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:639px) {
+    header {
         background-color: black;
-        border: 0px;
+        height: 480px;
+        margin: 0 auto;
+        text-align: center;
     }
-}
 
-@media only screen and (min-width:200px) and (max-width:789.5px) {
-    header {
-        height: 160px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    header .headerBox {
+        text-align: center;
+        height: 480px;
+        padding-top: 10px;
+        margin: 0 auto;
     }
+
+    header img {
+        width: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
 
     header ul li {
-        font-size: 15px;
-        margin-left: 20px;
-    }
-
-    header img {
-        width: 70px;
-        float: left;
-        margin-left: 20px;
-        margin-top: 14px;
+        display: block;
+        list-style: none;
+        margin-left: -30px;
+        margin-top: 26px;
+        font-size: 16px;
+        color: #ffffff;
     }
 
     header .checkoutIcon {
         font-size: 25px;
         color: #ffffff;
-        margin-right: 20px;
-    }
-
-    header span {
-        visibility: hidden;
+        margin-right: 0px;
     }
 }
 
-
-@media only screen and (max-width:728px) {
+@media only screen and (max-width:550px) {
     header {
-        height: 150px;
+        background-color: black;
+        height: 480px;
+        margin: 0 auto;
+        text-align: center;
     }
-    header span {
-        visibility: hidden;
-    }
-}
 
-
-@media only screen and (max-width:640px) {
-    header {
-        height: 130px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
+    header .headerBox {
+        text-align: center;
+        height: 480px;
+        padding-top: 10px;
+        margin: 0 auto;
     }
 
     header img {
         width: 70px;
-        float: left;
-        margin-left: 13px;
-        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
-    header .checkoutIcon {
-        font-size: 25px;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    header {
-        height: 220px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-    }
 
     header ul li {
-        font-size: 15px;
-        margin-left: 10px;
-    }
-    
-    header img {
-        width: 70px;
-        float: left;
-        margin-left: 13px;
-        margin-top: 0px;
+        display: block;
+        list-style: none;
+        margin-left: -30px;
+        margin-top: 26px;
+        font-size: 16px;
+        color: #ffffff;
     }
 
     header .checkoutIcon {
         font-size: 25px;
         color: #ffffff;
-        margin-right: 20px;
+        margin-right: 0px;
     }
 }
 
-@media only screen and (max-width:394px) {
+@media only screen and (max-width:435px) {
     header {
-        height: 240px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
+        background-color: black;
+        height: 470px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header .headerBox {
+        text-align: center;
+        height: 470px;
+        padding-top: 10px;
+        margin: 0 auto;
     }
 
     header img {
         width: 70px;
-        float: left;
-        margin-left: 13px;
-        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    header ul li {
+        display: block;
+        list-style: none;
+        margin-left: -30px;
+        margin-top: 26px;
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
     }
 
     header .checkoutIcon {
         font-size: 25px;
         color: #ffffff;
-        margin-right: 20px;
+        margin-right: 0px;
     }
 }
+

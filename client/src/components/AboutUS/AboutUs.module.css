@@ -111,6 +111,7 @@
 
     .container {
         height: fit-content;
+        margin: 0 auto;
     }
 
 }
@@ -123,6 +124,8 @@
 
     .container {
         width: 400px;
+        margin: 0 auto;
+        margin-top: 80px;
     }
 
     .containerForm h2 {
@@ -149,6 +152,8 @@
 
     .container {
         width: 400px;
+        margin: 0 auto;
+        margin-top: 80px;
     }
 
     .containerForm h2 {

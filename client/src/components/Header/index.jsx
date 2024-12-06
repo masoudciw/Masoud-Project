@@ -16,11 +16,9 @@ const Header = () => {
     return (
         <>
             <header>
-                <div>
-                    <Link to='/'><img src={Logo} alt="Logo Image" /></Link>
-                </div>
-                <div>
+                <div className='headerBox'>
                     <ul>
+                        <Link to='/'><li><img src={Logo} alt="Logo Image" /></li></Link>
                         <Link to='/'><li>HOME</li></Link>
                         <Link to='/products'><li>PRODUCTS</li></Link>
                         <Link to='/aboutus'><li>ABOUT US</li></Link>
@@ -39,7 +37,7 @@ const Header = () => {
                                 <Link className='signUpButton' to="/signup"><li>SIGN UP</li></Link>
                             </>
                         )}
-                        <Link  to='/checkout'><li><PiShoppingCartSimpleBold className='checkoutIcon'/></li></Link>
+                        <Link to='/checkout'><li><PiShoppingCartSimpleBold className='checkoutIcon' /></li></Link>
                         {!!state.itemsCounter && <span className='itemsCounter'>{state.itemsCounter}</span>}
                     </ul>
                 </div>

@@ -79,6 +79,16 @@
     .bannerText img {
         width: 500px;
     }
+
+    .bannerText {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin-top: 0px;
+        padding-top: 70px;
+    }
 }
 
 @media only screen and (max-width:550px) {
@@ -88,6 +98,16 @@
         height: 450px;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .bannerText {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin-top: 0px;
+        padding-top: 70px;
     }
 
     .bannerText h1 {
@@ -110,6 +130,45 @@
     }
 }
 
+@media only screen and (max-width:470px) {
+    .banner {
+        background-color: black;
+        color: #ffffff;
+        height: 450px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .bannerText {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin-top: 0px;
+        padding-top: 70px;
+    }
+
+    .bannerText h1 {
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+
+    .bannerText p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .bannerText span {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .bannerText img {
+        width: 380px;
+    }
+}
+
 @media only screen and (max-width:435px) {
     .banner {
         background-color: black;
@@ -129,7 +188,7 @@
         justify-content: center;
         background-color: black;
         margin-top: 0px;
-        padding-top: 140px;
+        padding-top: 70px;
     }
 
     .bannerText h1 {
