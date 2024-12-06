@@ -1,10 +1,12 @@
-.arrowBox{
+.arrowBox {
     background-color: black;
     height: 100px;
 }
+
 .wrapper {
     width: 1450px;
     margin: 0 auto;
+    position: relative;
 }
 
 .container {
@@ -41,71 +43,51 @@
     border: 3px solid #03408F;
 }
 
-@media (min-width: 500px) and (max-width: 1019px) {
-    .container {
-        display: none;
-    }
-}
-
-@media (max-width: 1420px) {
+@media only screen and (max-width:1490px) {
     .wrapper {
-        width: 1300px;
+        width: 1350px;
+        margin: 0 auto;
     }
-
 }
 
-@media (max-width: 1320px) {
+@media only screen and (max-width:1359px) {
     .wrapper {
-        width: 1200px;
+        width: 1250px;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 1220px) {
+@media only screen and (max-width:1258px) {
     .wrapper {
-        width: 1100px;
+        width: 1150px;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 1120px) {
+@media only screen and (max-width:1156px) {
     .wrapper {
-        width: 1000px;
+        width: 1050px;
+        margin: 0 auto;
     }
 }
 
-@media (min-width: 1705px) and (max-width:2309px) {
-    .container {
-        position: relative;
-        left: 100px;
-        bottom: 0;
+@media only screen and (max-width:1056px) {
+    .wrapper {
+        width: 950px;
+        margin: 0 auto;
     }
 }
 
-@media (min-width: 1919px) and (max-width:2309px) {
-    .container {
-        position: relative;
-        left: 200px;
-        bottom: 0;
+@media only screen and (max-width:956px) {
+    .wrapper {
+        width: 850px;
+        margin: 0 auto;
     }
 }
 
-@media (min-width: 2047px) and (max-width:2309px) {
-    .container {
-        position: relative;
-        left: 300px;
-        bottom: 0;
+@media only screen and (max-width:906px) {
+    .wrapper {
+       display: none;
     }
 }
 
-@media (min-width: 2303px) and (max-width:3071px) {
-    .container {
-        position: relative;
-        left: 400px;
-        bottom: 0;
-    }
-}
-
-@media (min-width: 3071px) and (max-width:4607px) {
-    .container {
-        display: none;
-    }
-}
