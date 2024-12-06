@@ -87,3 +87,35 @@
        margin-bottom: 50px;
     }
 }
+
+@media only screen and (max-width:500px) {
+    .footer2 {
+        background-color: black;
+        height: 270px;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer2 div{
+       margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .footer2 {
+        background-color: black;
+        height: 270px;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer2 div{
+       margin-bottom: 50px;
+    }
+}

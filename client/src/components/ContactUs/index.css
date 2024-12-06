@@ -182,3 +182,30 @@
         width: 450px;
     }
 }
+
+@media only screen and (max-width:435px) {
+    .contact {
+        height: 1700px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 150px;
+    }
+
+    .contact .formBox {
+        width: 380px;
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 0px 0px 2px 2px solid gray;
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    .contactInfo {
+        background-color: #ffffffe5;
+        padding: 30px;
+        border: 2px 2px 2px 2px solid gray;
+        border-radius: 15px 15px 0px 0px;
+        width: 380px;
+    }
+}

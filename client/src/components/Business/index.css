@@ -86,3 +86,24 @@
         transition: .5s;
     }
 }
+
+@media only screen and (max-width:435px) {
+    .businessText h2 {
+        width: 330px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .businessText p {
+        width: 330px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-bottom: 50px;
+    }
+
+    .businessText {
+        display: inline-block;
+        margin-top: 120px;
+        opacity: 1;
+    }
+}

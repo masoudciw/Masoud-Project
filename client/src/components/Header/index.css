@@ -275,3 +275,56 @@ header button:hover {
         margin-right: 20px;
     }
 }
+
+@media only screen and (max-width:450px) {
+    header {
+        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    header ul li {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    header img {
+        width: 70px;
+        float: left;
+        margin-left: 13px;
+        margin-top: 0px;
+    }
+
+    header .checkoutIcon {
+        font-size: 25px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width:394px) {
+    header {
+        height: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    header img {
+        width: 70px;
+        float: left;
+        margin-left: 13px;
+        margin-top: 0px;
+    }
+
+    header .checkoutIcon {
+        font-size: 25px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+}

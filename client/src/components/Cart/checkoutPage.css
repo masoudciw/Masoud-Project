@@ -251,8 +251,109 @@
         margin-top: -13px;
     }
 
-    .emptyCartBox img{
-width: 300px;
+    .emptyCartBox img {
+        width: 300px;
     }
 }
 
+@media only screen and (max-width:500px) {
+    .basketSideBar {
+        border: 3px dashed red;
+        width: 300px;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 50px;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+
+    .selectedItems {
+        width: 350px;
+        padding: 10px;
+        height: 190px;
+    }
+
+    .selectedItems .basketCartBox {
+        height: 170px;
+    }
+
+    .selectedItems img {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-right: 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .selectedItems p {
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 55px;
+    }
+
+    .selectedItems .basketCartButtons {
+        float: right;
+        margin-right: 5px;
+        font-size: 18px;
+        margin-top: -13px;
+    }
+
+    .emptyCartBox img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .basketSideBar {
+        border: 3px dashed red;
+        width: 300px;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 50px;
+        margin: 0px auto;
+        margin-bottom: 30px;
+    }
+
+    .selectedItems {
+        width: 350px;
+        padding: 10px;
+        height: 190px;
+    }
+
+    .selectedItems .basketCartBox {
+        height: 170px;
+    }
+
+    .selectedItems img {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-right: 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .selectedItems p {
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 55px;
+    }
+
+    .selectedItems .basketCartButtons {
+        float: right;
+        margin-right: 5px;
+        font-size: 18px;
+        margin-top: -13px;
+    }
+
+    .emptyCartBox img {
+        width: 300px;
+    }
+}

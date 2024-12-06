@@ -123,5 +123,48 @@
         position: absolute;
         left: -175px;
     }
+}
+
+@media only screen and (max-width:500px) {
+    .formLoginBox {
+        width: 360px;
+        height: 640px;
+    }
+
+    .formLoginBox input {
+        width: 300px;
+    }
+
+    .formLoginBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .formLoginBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -130px;
+    }
+
+}
+
+@media only screen and (max-width:435px) {
+    .formLoginBox {
+        width: 360px;
+        height: 640px;
+    }
+
+    .formLoginBox input {
+        width: 300px;
+    }
+
+    .formLoginBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .formLoginBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -130px;
+    }
 
 }

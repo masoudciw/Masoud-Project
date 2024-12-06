@@ -112,16 +112,57 @@
     .container {
         height: fit-content;
     }
+
 }
 
 @media (max-width: 500px) {
     .wrapper {
-        width: 450px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .containerForm h2 {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .containerForm p {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .links {
+        width: 350px;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 435px) {
     .wrapper {
-        width: 250px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .containerForm h2 {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .containerForm p {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .links {
+        width: 350px;
+        margin: 0 auto;
     }
 }

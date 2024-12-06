@@ -105,3 +105,47 @@
         left: -175px;
     }
 }
+
+@media only screen and (max-width:500px) {
+    .formSignUpBox {
+        width: 360px;
+        height: 640px;
+    }
+
+    .formSignUpBox input {
+        width: 300px;
+    }
+
+    .formSignUpBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .formSignUpBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -130px;
+    }
+
+}
+
+@media only screen and (max-width:435px) {
+    .formSignUpBox {
+        width: 360px;
+        height: 600px;
+    }
+
+    .formSignUpBox input {
+        width: 300px;
+    }
+
+    .formSignUpBox .col-sm-10 button {
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .formSignUpBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: -130px;
+    }
+
+}
