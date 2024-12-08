@@ -29,6 +29,7 @@
     border-radius: 15px 15px 15px 15px;
     /* height: 800px; */
     height: 600px;
+    position: relative;
 }
 
 .formLoginBox h6 {
@@ -50,7 +51,6 @@
 }
 
 .formLoginBox .checkBox {
-    position: relative;
     margin-bottom: 20px;
 }
 
@@ -61,8 +61,8 @@
 
 .formLoginBox .checkBox .checkBoxMarker {
     position: absolute;
-    left: -225px;
-    top: 29px;
+    left: -205px;
+    top: 381px;
     height: 15px;
     border: 1px solid gray;
 }
@@ -121,7 +121,8 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -175px;
+        left: -155px;
+        top: 416px;
     }
 }
 
@@ -142,7 +143,8 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -130px;
+        left: -110px;
+        top: 416px;
     }
 
 }
@@ -164,7 +166,8 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -130px;
+        left: -110px;
+        top: 416px;
     }
 
 }

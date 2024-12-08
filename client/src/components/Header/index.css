@@ -106,6 +106,10 @@ header button:hover {
         color: #ffffff;
         margin-right: 0px;
     }
+
+    header .logoutButton{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:1067px) {
@@ -142,6 +146,10 @@ header button:hover {
         top: 50px;
         font-size: 15px;
     }
+
+    header .logoutButton{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:888px) {
@@ -176,6 +184,10 @@ header button:hover {
         right:70px;
         top: 50px;
         font-size: 15px;
+    }
+
+    header .logoutButton{
+        font-size: 18px;
     }
 }
 
@@ -212,6 +224,10 @@ header button:hover {
         right:55px;
         top: 50px;
         font-size: 15px;
+    }
+
+    header .logoutButton{
+        font-size: 16px;
     }
 }
 
@@ -258,6 +274,10 @@ header button:hover {
     header span {
         visibility: hidden;
     }
+
+    header .logoutButton{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width:550px) {
@@ -295,6 +315,10 @@ header button:hover {
         font-size: 25px;
         color: #ffffff;
         margin-right: 0px;
+    }
+
+    header .logoutButton{
+        font-size: 16px;
     }
 }
 
@@ -334,5 +358,9 @@ header button:hover {
         font-size: 25px;
         color: #ffffff;
         margin-right: 0px;
+    }
+
+    header .logoutButton{
+        font-size: 16px;
     }
 }

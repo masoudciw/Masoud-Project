@@ -88,4 +88,40 @@
         width: 400px;
         margin: 30px auto;
     }
+    .commentFormBox button{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .commentFormBox {
+        width: 300px;
+        margin: 30px auto;
+    }
+    .commentFormWriteBox textarea {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .commentFormWriteBox {
+        width: 300px;
+        margin: 30px auto;
+    }
+    .commentFormBox button{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .commentFormBox {
+        width: 300px;
+        margin: 30px auto;
+    }
+    .commentFormWriteBox textarea {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .commentFormWriteBox {
+        width: 300px;
+        margin: 30px auto;
+    }
 }
