@@ -94,6 +94,10 @@
     margin-left: 10px;
 }
 
+.searchBox .searchButton {
+    width: 30px;
+}
+
 .categoryBox {
     width: 300px;
     text-align: center;
@@ -203,7 +207,7 @@
 
 @media only screen and (max-width:550px) {
     .products {
-        margin: 100px auto;
+        margin: 0px auto;
         display: block;
         width: 350px;
     }
@@ -211,13 +215,14 @@
     .productsBox {
         margin: 70px auto;
     }
+
     .filterBox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     .searchBox {
         margin: 0 auto;
         margin-top: 60px;
@@ -226,7 +231,7 @@
 
 @media only screen and (max-width:500px) {
     .products {
-        margin: 100px auto;
+        margin: 0px auto;
         display: block;
         width: 350px;
     }
@@ -234,13 +239,14 @@
     .productsBox {
         margin: 70px auto;
     }
+
     .filterBox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     .searchBox {
         margin: 0 auto;
         margin-top: 60px;
@@ -249,7 +255,7 @@
 
 @media only screen and (max-width:435px) {
     .products {
-        margin: 100px auto;
+        margin: 0px auto;
         display: block;
         width: 350px;
     }
@@ -257,13 +263,14 @@
     .productsBox {
         margin: 70px auto;
     }
+
     .filterBox {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     .searchBox {
         margin: 0 auto;
         margin-top: 60px;

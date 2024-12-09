@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaSearch } from "react-icons/fa";
+// import { FaSearch } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa";
 import { useQuery } from '@apollo/client';
 import { QUERY_POSTS } from '../../utils/queries';
@@ -7,6 +7,7 @@ import { QUERY_POSTS } from '../../utils/queries';
 import useTitle from '../../hooks/useTitle';
 import Cart from '../Cart/Cart';
 import NoProduct from '../../assets/noPosts.jpg';
+import SearchIcon from '../../assets/magnifying-glass.png';
 import './index.css';
 
 
@@ -54,7 +55,7 @@ const Products = () => {
             <div className='filterBox'>
                 <div className='searchBox'>
                     <input type="text" value={search} placeholder='Search Your Product Brand' id='search' onChange={(e) => setSearch(e.target.value)} />
-                    <button type='submit' onClick={searchHandler}><FaSearch /></button>
+                    <button type='submit' onClick={searchHandler}><img className='searchButton' src={SearchIcon} alt="Search Button" /></button>
                 </div>
                 <div className='categoryBox'>
                     <div className='categories'>
