@@ -136,3 +136,33 @@
     }
 
 }
+
+@media only screen and (max-width:500px) {
+    .userBox {
+        height: 605px;
+        margin-left: 20px;
+    }
+
+    .userContainer {
+        margin: 0 auto;
+        width: 350px;
+        background-color: rgb(216, 216, 216);
+        padding: 30px;
+        border: 0px 2px 2px 0px solid gray;
+        border-radius: 15px 15px 15px 15px;
+        height: 550px;
+        margin-top: 20px;
+    }
+
+    .userContainer input {
+        border: 1px solid gray;
+        width: 290px;
+        margin-bottom: 30px;
+    }
+
+
+    .userContainer button {
+        width: 290px;
+    }
+
+}
