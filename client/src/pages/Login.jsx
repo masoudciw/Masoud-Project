@@ -187,6 +187,7 @@ const Login = () => {
                         {error.message}
                     </div>
                 )}
+                <p className='adminInfo'>Admin Login Information: <span>[ Email: masoud@gmail.com <i>|</i> Password: 123456 ]</span></p>
             </div>
 
         </>
