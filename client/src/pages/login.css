@@ -119,6 +119,14 @@
     color: red;
 }
 
+@media only screen and (min-width:700px) and (max-width:933px) {
+    .formLoginBox .checkBox .checkBoxMarker {
+        position: absolute;
+        left: 30px;
+        top: 380px;
+    }
+}
+
 @media only screen and (min-width:500px) and (max-width:700px) {
     .formLoginBox {
         width: 450px;
