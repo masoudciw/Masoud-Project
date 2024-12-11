@@ -129,12 +129,14 @@ const Login = () => {
         <>
             <div className='loginBox'>
                 {data ? (
-                    <div className='loginSuccessMessage'>
-                        <img src={Loader} alt="Loader Image" />
-                        <p>
-                            Login To Your Account!
-                        </p>
-                    </div>
+                    <>
+                        <div className='loginSuccessMessage'>
+                            <img src={Loader} alt="Loader Image" />
+                            <p>
+                                Login To Your Account!
+                            </p>
+                        </div>
+                    </>
                 ) : (
                     <form className='formLoginBox' onSubmit={handleFormSubmit}>
                         <h6>Sign in or create a new account in order to save items or add to your wish list.</h6>
