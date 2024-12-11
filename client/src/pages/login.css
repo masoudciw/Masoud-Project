@@ -61,10 +61,12 @@
 
 .formLoginBox .checkBox .checkBoxMarker {
     position: absolute;
-    left: -205px;
+    left: 13px;
     top: 381px;
     height: 15px;
     border: 1px solid gray;
+    width: 50px;
+
 }
 
 .formLoginBox .forgotPassword {
@@ -121,7 +123,7 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -155px;
+        left: 15px;
         top: 416px;
     }
 }
@@ -143,7 +145,7 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -110px;
+        left: 15px;
         top: 416px;
     }
 
@@ -166,7 +168,7 @@
 
     .formLoginBox .checkBox .checkBoxMarker {
         position: absolute;
-        left: -110px;
+        left: 15px;
         top: 416px;
     }
 
